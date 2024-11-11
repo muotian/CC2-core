@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "login": {
+      "trigger": "tick"
+    }
+  },
+  "rewards": {
+    "function": "cc2.internal:give_score_id"
+  }
+}

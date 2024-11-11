@@ -4,12 +4,12 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:light_blue_wool",
+          "type": "item",
+          "name": "light_blue_wool",
           "functions": [
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{objective:{}}"
+              "function": "reference",
+              "name": "cc2.internal:objective_common"
             }
           ]
         }
