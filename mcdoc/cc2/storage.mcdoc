@@ -1,0 +1,52 @@
+type RootedStorage<T> = struct {
+  root: T
+}
+
+enum(string) AreaName {
+  Core = "cc2",
+  Monument = "monument",
+  White = "white",
+  Orange = "orange",
+  Magenta = "magenta",
+  LightBlue = "light_blue",
+  Yellow = "yellow",
+  Lime = "lime",
+  Pink = "pink",
+  Gray = "gray",
+  LightGray = "light_gray",
+  Cyan = "cyan",
+  Purple = "purple",
+  Blue = "blue",
+  Brown = "brown",
+  Green = "green",
+  Red = "red",
+  Black = "black"
+}
+
+struct PerPlayerStorage {
+  [AreaName]: struct {
+    [string]: any
+  }
+}
+
+struct ActionBar {
+  id: string,
+  text: #[text_component] string
+}
+
+/// Internal data. Don't touch
+struct InternalPlayerStorage {
+  [string]: PerPlayerStorage
+}
+
+/// Internal data. Don't touch
+struct InternalMacroParam {
+  index?: int @ 1..
+}
+
+dispatch :storage[cc2:player_storage] to RootedStorage<PerPlayerStorage>
+dispatch :storage[cc2:player_nbt] to RootedStorage<:entity[:player]>
+dispatch :storage[cc2:actionbar] to RootedStorage<[ActionBar]>
+
+dispatch :storage[cc2.internal:player_storage_base] to RootedStorage<InternalPlayerStorage>
+dispatch :storage[cc2.internal:macro] to RootedStorage<InternalMacroParam>

@@ -1,16 +1,15 @@
 {
-	"pack": {
-	"pack_format": 57,
-	"description": "Cartocraft II Core DTP"
-	},
-	"filter":
-	{
-		"block":
-		[
-			{
-				"namespace": "minecraft",
-				"path": "advancement/"
-			}
-		]
-	}
+  "pack": {
+    "pack_format": 59,
+    "supported_formats": [59, 59],
+    "description": "Cartocraft 2 Core"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "^minecraft$",
+        "path": "^advancement/(?!recipes/).*"
+      }
+    ]
+  }
 }

@@ -4,12 +4,12 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:yellow_wool",
+          "type": "item",
+          "name": "yellow_wool",
           "functions": [
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{objective:{}}"
+              "function": "reference",
+              "name": "cc2.internal:objective_common"
             }
           ]
         }

@@ -1,5 +1,3 @@
 {
-	"values":[
-		"cc2:tick"
-	]
+  "values": ["cc2.internal:tick"]
 }
