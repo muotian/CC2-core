@@ -57,11 +57,37 @@ Example:
 
 ### `#cc2:load_player_nbt_score`
 
-- Hook only
-- Not callable
+- Hook only; not callable
 
 Example:
 ```mcfunction
 # this function is hooked on #cc2:load_player_nbt_score
 execute store result score @s example.air run data get storage cc2:player_nbt root.Air
+```
+
+### `#minecraft:tick`
+
+- `cc2:first_tick` should be the first one
+- `cc2:last_tick` should be the last one
+
+## Player Data Storage
+
+- Call `cc2:load_player_storage` as `@s` to load
+- Access path `root.<namespace>.*` of storage `cc2:player_storage` to store data
+- Call `cc2:save_player_storage` to save data back
+
+### `root.cc2.actionbar`
+
+- A list of object with following fields:
+  - `id`: identifier
+  - `text`: stringified text component to display in actionbar; its total width should be 0
+- To display: modify `root.cc2.actionbar[{id: <id>}].text`
+- To erase: remove `root.cc2.actionbar[{id: <id>}]`
+
+Example:
+```mcfunction
+# run as @s
+function cc2:load_player_storage
+data modify storage cc2:player_storage root.cc2.actionbar[{id: "example:number"}].text set value '["0", {"text": "0", "font": "example:negative_number"}]'
+function cc2:save_player_storage
 ```
