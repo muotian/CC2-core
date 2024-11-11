@@ -23,15 +23,18 @@ enum(string) AreaName {
   Black = "black"
 }
 
-struct PerPlayerStorage {
-  [AreaName]: struct {
-    [string]: any
-  }
-}
-
 struct ActionBar {
   id: string,
   text: #[text_component] string
+}
+
+struct PerPlayerStorage {
+  [AreaName]: struct {
+    [string]: any
+  },
+  cc2: struct {
+    actionbar: [ActionBar]
+  }
 }
 
 /// Internal data. Don't touch
@@ -46,7 +49,6 @@ struct InternalMacroParam {
 
 dispatch :storage[cc2:player_storage] to RootedStorage<PerPlayerStorage>
 dispatch :storage[cc2:player_nbt] to RootedStorage<:entity[:player]>
-dispatch :storage[cc2:actionbar] to RootedStorage<[ActionBar]>
 
 dispatch :storage[cc2.internal:player_storage_base] to RootedStorage<InternalPlayerStorage>
 dispatch :storage[cc2.internal:macro] to RootedStorage<InternalMacroParam>

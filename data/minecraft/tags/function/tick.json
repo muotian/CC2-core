@@ -1,3 +1,6 @@
 {
-  "values": ["cc2.internal:tick"]
+  "values": [
+    "cc2.internal:first_tick",
+    "cc2.internal:last_tick"
+  ]
 }
