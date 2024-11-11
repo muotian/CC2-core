@@ -23,3 +23,15 @@ scoreboard objectives add cc2.not_mob dummy "[Mark] Not a mob"
 
 # Storage
 execute unless data storage cc2.internal:player_storage_base root run data modify storage cc2.internal:player_storage_base root set value {}
+
+# Gamerule
+gamerule commandBlockOutput false
+gamerule doMobSpawning true
+gamerule doDaylightCycle false
+time set midnight
+gamerule doWeatherCycle false
+weather clear
+gamerule mobGriefing true
+gamerule maxCommandChainLength 1000000
+gamerule maxCommandForkCount 1000000
+#gamerule sendCommandFeedback false
