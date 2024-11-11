@@ -65,17 +65,3 @@ Example:
 # this function is hooked on #cc2:load_player_nbt_score
 execute store result score @s example.air run data get storage cc2:player_nbt root.Air
 ```
-
-## Data Storage
-
-### `cc2:actionbar`
-
-- Text should have its total width being 0 (implemented with negative space font)
-- Write - `root[{id: <id>}].text`
-- Remove - `root[{id: <id>}]`
-
-Example:
-```mcfunction
-data modify storage cc2:actionbar root[{id: "cc2:example"}].text set value '["Test", {"text": "\\ue001", "font": "cc2:example_negative"}]'
-data remove storage cc2:actionbar root[{id: "cc2:example"}]
-```
