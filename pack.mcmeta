@@ -1,0 +1,16 @@
+{
+	"pack": {
+	"pack_format": 57,
+	"description": "Cartocraft II Core DTP"
+	},
+	"filter":
+	{
+		"block":
+		[
+			{
+				"namespace": "minecraft",
+				"path": "advancement/"
+			}
+		]
+	}
+}
