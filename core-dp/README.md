@@ -76,6 +76,25 @@ execute store result score @s example.air run data get storage cc2:player_nbt ro
 - Access path `root.<namespace>.*` of storage `cc2:player_storage` to store data
 - Call `cc2:save_player_storage` to save data back
 
+Example: Store current offhand item
+
+```mcfunction
+# run as @s
+function cc2:load_player_storage
+item replace entity cc2-0-0-0-2 contents from entity @s weapon.offhand
+data modify storage cc2:player_storage root.example.offhand_item set from entity cc2-0-0-0-2 item
+function cc2:save_player_storage
+```
+
+Example: Give the item back
+
+```mcfunction
+# run as @s
+function cc2:load_player_storage
+data modify entity cc2-0-0-0-2 item set from storage cc2:player_storage root.example.offhand_item
+item replace entity @s weapon.offhand from entity cc2-0-0-0-2 contents
+```
+
 ### `root.cc2.actionbar`
 
 - A list of object with following fields:
