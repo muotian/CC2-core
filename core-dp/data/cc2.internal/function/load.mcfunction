@@ -5,6 +5,7 @@ function cc2.internal:forceload_chunk_load
 # General scores
 scoreboard objectives add number dummy "Numbers"
 scoreboard objectives add cc2 dummy "CC2 env"
+scoreboard objectives add cc2.actionbar_active dummy "Player actionbar state"
 
 # Player tracker / storage manager
 scoreboard objectives add cc2.score_id dummy
