@@ -7,6 +7,11 @@
 - \(`@s[type=player]`, `cc2.health`\)
 - \(`@s[type=player]`, `cc2.absorption`\)
 - \(`@s[type=player]`, `cc2.selected_slot`\)
+- \(`@s[type=player]`, `cc2.pos_x`\)
+- \(`@s[type=player]`, `cc2.pos_y`\)
+- \(`@s[type=player]`, `cc2.pos_z`\)
+- \(`@s[type=player]`, `cc2.yaw`\)
+- \(`@s[type=player]`, `cc2.pitch`\)
 
 ## Entity Marker Scores
 
