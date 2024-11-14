@@ -37,6 +37,11 @@ gamerule doDaylightCycle false
 time set midnight
 gamerule doWeatherCycle false
 weather clear
+gamerule spawnRadius 2
+gamerule disableRaids true
+gamerule doInsomnia false
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
 gamerule mobGriefing true
 gamerule doFireTick false
 gamerule maxCommandChainLength 1000000
