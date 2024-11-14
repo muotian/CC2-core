@@ -17,6 +17,11 @@ execute unless score #loaded_player_nbt cc2 matches 0.. run scoreboard players s
 scoreboard objectives add cc2.health dummy "[Player] Health (1000x)"
 scoreboard objectives add cc2.absorption dummy "[Player] AbsorptionAmount (1000x)"
 scoreboard objectives add cc2.selected_slot dummy "[Player] SelectedItemSlot"
+scoreboard objectives add cc2.pos_x dummy "[Player] Pos[0]"
+scoreboard objectives add cc2.pos_y dummy "[Player] Pos[1]"
+scoreboard objectives add cc2.pos_z dummy "[Player] Pos[2]"
+scoreboard objectives add cc2.yaw dummy "[Player] Rotation[0]"
+scoreboard objectives add cc2.pitch dummy "[Player] Rotation[1]"
 
 # Tag scores
 scoreboard objectives add cc2.dummy_mob dummy "[Mark] Not of type"
@@ -33,6 +38,7 @@ time set midnight
 gamerule doWeatherCycle false
 weather clear
 gamerule mobGriefing true
+gamerule doFireTick false
 gamerule maxCommandChainLength 1000000
 gamerule maxCommandForkCount 1000000
 #gamerule sendCommandFeedback false
