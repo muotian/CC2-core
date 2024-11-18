@@ -115,3 +115,55 @@ function cc2:load_player_storage
 data modify storage cc2:player_storage root.cc2.actionbar[{id: "example:number"}].text set value '["0", {"text": "0", "font": "example:negative_number"}]'
 function cc2:save_player_storage
 ```
+
+## Mcdoc
+
+### To use
+
+1. Copy `mcdoc` folder to your datapack
+2. Optionally delete `mcdoc/cartocraft/internal_storage`
+3. Reload VSC
+
+### To customize player data storage
+
+The same example: Store current offhand item
+
+```mcfunction
+# run as @s
+function cc2:load_player_storage
+item replace entity cc2-0-0-0-2 contents from entity @s weapon.offhand
+data modify storage cc2:player_storage root.example.offhand_item set from entity cc2-0-0-0-2 item
+function cc2:save_player_storage
+```
+
+To add datatype to `root.example`, use:
+
+```
+use ::java::server::world::item::ItemStack
+dispatch cc2:player_storage[example] to struct {
+  offhand_item: ItemStack
+}
+```
+
+### To customize item `custom_data`
+
+Example: `*[custom_data~{example: {wand: {}, flag: 0b}}]`
+
+```
+dispatch mcdoc:custom_data[example] to struct {
+  wand?: struct {},
+  flag?: boolean
+}
+```
+
+### To customize marker `data`
+
+Wait, why?
+
+Example: `{data: {example: {command: "say @s"}}}`
+
+```
+dispatch mcdoc:marker_data[example] to struct {
+  command?: #[command] string
+}
+```
