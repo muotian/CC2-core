@@ -1,0 +1,19 @@
+use ::cartocraft::util::RootedStorage
+
+struct ActionBar {
+  id: string,
+  text: #[text_component] string
+}
+
+struct PerPlayerStorage {
+  [#[dispatcher_key="cc2:player_storage"] string]: cc2:player_storage[[%key]]
+}
+dispatch cc2:player_storage[%unknown] to any
+
+struct CorePlayerStorage {
+  actionbar: [ActionBar]
+}
+
+dispatch cc2:player_storage[cc2] to CorePlayerStorage
+dispatch :storage[cc2:player_storage] to RootedStorage<PerPlayerStorage>
+dispatch :storage[cc2:player_nbt] to RootedStorage<:entity[:player]>

@@ -1,0 +1,15 @@
+use ::cartocraft::storage::PerPlayerStorage
+use ::cartocraft::util::RootedStorage
+
+/// Internal data. Don't touch
+struct InternalPlayerStorage {
+  [string]: PerPlayerStorage
+}
+
+/// Internal data. Don't touch
+struct InternalMacroParam {
+  index?: int @ 1..
+}
+
+dispatch :storage[cc2.internal:player_storage_base] to RootedStorage<InternalPlayerStorage>
+dispatch :storage[cc2.internal:macro] to RootedStorage<InternalMacroParam>
