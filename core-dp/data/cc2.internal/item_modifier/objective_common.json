@@ -1,9 +1,7 @@
 {
   "function": "set_components",
   "components": {
-    "custom_data": {
-      "cc2": {"objective": {}}
-    },
+    "custom_data": "{cc2: {objective: {}}}",
     "lore": [
       "{\"translate\": \"item_desc.cc2.objective\", \"color\": \"gray\", \"italic\": false, \"fallback\": \"Objective\"}"
     ],

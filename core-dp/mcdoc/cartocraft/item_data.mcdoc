@@ -1,0 +1,10 @@
+struct Empty {}
+
+struct ItemCustomData {
+  [#[dispatcher_key="cc2:custom_data"] string]: cc2:custom_data[[%key]]
+}
+dispatch cc2:custom_data[%unknown] to any
+dispatch mcdoc:custom_data[cc2] to ItemCustomData
+
+dispatch cc2:custom_data[objective] to Empty
+dispatch cc2:custom_data[unobtainable] to Empty
