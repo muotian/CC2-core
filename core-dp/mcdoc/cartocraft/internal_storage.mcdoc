@@ -1,5 +1,5 @@
-use ::cartocraft::storage::PerPlayerStorage
-use ::cartocraft::util::RootedStorage
+use super::storage::PerPlayerStorage
+use super::util::RootedStorage
 
 /// Internal data. Don't touch
 struct InternalPlayerStorage {

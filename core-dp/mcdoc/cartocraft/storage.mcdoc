@@ -1,4 +1,4 @@
-use ::cartocraft::util::RootedStorage
+use super::util::RootedStorage
 
 struct ActionBar {
   id: string,
