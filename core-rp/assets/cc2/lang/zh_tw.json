@@ -1,0 +1,21 @@
+{
+  "item_desc.cc2.objective": "目標物",
+  "text.cc2.resource_pack_test": "資源包已經安裝。",
+  "tool_tier.cc2.wood": "工具等級：木頭",
+  "tool_tier.cc2.gold": "工具等級：金",
+  "tool_tier.cc2.stone": "工具等級：石頭",
+  "tool_tier.cc2.iron": "工具等級：鐵",
+  "tool_tier.cc2.diamond": "工具等級：鑽石",
+  "tool_tier.cc2.netherite": "工具等級：獄髓",
+
+  "enchantment.level.11": "XI",
+  "enchantment.level.12": "XII",
+  "enchantment.level.13": "XIII",
+  "enchantment.level.14": "XIV",
+  "enchantment.level.15": "XV",
+  "enchantment.level.16": "XVI",
+  "enchantment.level.17": "XVII",
+  "enchantment.level.18": "XVIII",
+  "enchantment.level.19": "XIX",
+  "enchantment.level.20": "XX"
+}
