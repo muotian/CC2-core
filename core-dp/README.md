@@ -57,6 +57,7 @@ Example:
 - `cc2-0-0-0-2` - Item display
 - `cc2-0-0-0-3` - Block display
 - `cc2-0-0-0-4` - Marker
+- `cc2-0-0-0-5` - Armor stand (base burning time = 1)
 
 ## Function Tags
 
