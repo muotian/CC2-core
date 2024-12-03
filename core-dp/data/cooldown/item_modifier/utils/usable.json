@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:consumable": {
+      "animation": "none",
+      "consume_seconds": 1e16,
+      "has_consume_particles": false
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "cc2:dummy_item",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Item Cooldown Demo"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "mode: item",
+                "form: overlay"
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:item_model": "cooldown:demo_overlay",
+                "minecraft:custom_data": {
+                  "cooldown": {
+                    "mode": "item",
+                    "length": 5,
+                    "on_use": true,
+                    "start_callback": {
+                      "type": "item_modifier",
+                      "value": "cooldown:utils/unusable"
+                    },
+                    "end_callback": {
+                      "type": "item_modifier",
+                      "value": "cooldown:utils/usable"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "cooldown:utils/usable"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+dispatch mcdoc:custom_data[cooldown] to CooldownData
+
+type CooldownData = (
+  struct ScoreCooldown {
+    mode?: "score",
+    objective?: #[objective] string,
+    ...CooldownBase
+  } |
+  struct ItemCooldown {
+    mode?: "item",
+    ...CooldownBase
+  } |
+)
+
+struct CooldownBase {
+  length?: int @ 1..600,
+  start_callback?: Callback,
+  end_callback?: Callback,
+  active?: boolean,
+  on_use?: boolean
+}
+
+type Callback = (
+  struct FunctionCallback {
+    type?: "function",
+    value?: #[id="function"] string
+  } |
+  struct ItemModifierCallback {
+    type?: "item_modifier",
+    value?: #[id="item_modifier"] string
+  } |
+)
