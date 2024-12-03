@@ -1,0 +1,75 @@
+{
+  "criteria": {
+    "let_me_check_if_that_thing_is_expired": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "cooldown": {
+                  "active": true
+                }
+              }
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "cooldown.ignore": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    "MC-251555": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "weapon.offhand": {
+                  "predicates": {
+                    "minecraft:custom_data": {
+                      "cooldown": {
+                        "active": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "cooldown.ignore": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "let_me_check_if_that_thing_is_expired",
+      "MC-251555"
+    ]
+  ],
+  "rewards": {
+    "function": "cooldown:_system/search_expire"
+  }
+}

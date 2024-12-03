@@ -1,6 +1,7 @@
 {
   "values": [
     "cc2.internal:first_tick",
+    "cooldown:_system/tick",
     "cc2.internal:last_tick"
   ]
 }

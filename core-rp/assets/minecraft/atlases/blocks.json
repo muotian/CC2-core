@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "cooldown:overlay"
+    },
+    {
+      "type": "single",
+      "resource": "cooldown:bar_back"
+    },
+    {
+      "type": "single",
+      "resource": "cooldown:bar_color"
+    },
+    {
+      "type": "single",
+      "resource": "cooldown:bar_cover"
+    }
+  ]
+}

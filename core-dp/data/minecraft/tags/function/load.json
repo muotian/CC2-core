@@ -1,3 +1,6 @@
 {
-  "values": ["cc2.internal:load"]
+  "values": [
+    "cc2.internal:load",
+    "cooldown:_system/load"
+  ]
 }
