@@ -30,7 +30,7 @@
                 "minecraft:custom_data": {
                   "cooldown": {
                     "mode": "item",
-                    "length": 5,
+                    "length": 8,
                     "on_use": true,
                     "start_callback": {
                       "type": "item_modifier",

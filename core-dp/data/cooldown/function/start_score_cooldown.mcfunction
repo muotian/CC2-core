@@ -7,6 +7,6 @@ execute unless score $success cooldown.number matches 1 run return run tellraw @
 $scoreboard objectives add cooldown.$(objective).length dummy
 $scoreboard players operation @s cooldown.$(objective).length = $length cooldown.time
 
-$data modify storage cooldown:macro root set value {objective:"$(objective)",slot:"",length:$(length),target:0,data:0}
+$data modify storage cooldown:macro root set value {objective:"$(objective)",slot:"",duration:0,target:0,data:0}
 function cooldown:_system/start_score with storage cooldown:macro root
 

@@ -16,6 +16,7 @@ struct CooldownBase {
   length?: int @ 1..600,
   start_callback?: Callback,
   end_callback?: Callback,
+  target?: int,
   active?: boolean,
   on_use?: boolean
 }
