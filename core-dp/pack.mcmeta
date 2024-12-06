@@ -8,6 +8,22 @@
       {
         "namespace": "^minecraft$",
         "path": "^advancement/(?!recipes/).*"
+      },
+      {
+        "namespace": "^minecraft$",
+        "path": "^advancement/recipes/building_blocks/white_wool_from_string\\.json$"
+      },
+      {
+        "namespace": "^minecraft$",
+        "path": "^advancement/recipes/building_blocks/dye_\\w+_wool\\.json$"
+      },
+      {
+        "namespace": "^minecraft$",
+        "path": "^recipe/white_wool_from_string\\.json$"
+      },
+      {
+        "namespace": "^minecraft$",
+        "path": "^recipe/dye_\\w+_wool\\.json$"
       }
     ]
   }
