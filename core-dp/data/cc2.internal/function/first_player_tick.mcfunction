@@ -10,3 +10,7 @@ execute store result score @s cc2.pos_z run data get storage cc2:player_nbt root
 execute store result score @s cc2.yaw run data get storage cc2:player_nbt root.Rotation[0]
 execute store result score @s cc2.pitch run data get storage cc2:player_nbt root.Rotation[1]
 function #cc2:load_player_nbt_score
+
+# Gamemode manager
+execute if function #cc2:is_in_adventure_zone run return run gamemode adventure @s[gamemode=survival]
+gamemode survival @s[gamemode=adventure]
