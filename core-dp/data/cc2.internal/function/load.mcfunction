@@ -23,10 +23,6 @@ scoreboard objectives add cc2.pos_z dummy "[Player] Pos[2]"
 scoreboard objectives add cc2.yaw dummy "[Player] Rotation[0]"
 scoreboard objectives add cc2.pitch dummy "[Player] Rotation[1]"
 
-# Tag scores
-scoreboard objectives add cc2.dummy_mob dummy "[Mark] Not of type"
-scoreboard objectives add cc2.not_mob dummy "[Mark] Not a mob"
-
 # Storage
 execute unless data storage cc2.internal:player_storage_base root run data modify storage cc2.internal:player_storage_base root set value {}
 
