@@ -71,6 +71,18 @@ Example:
 execute store result score @s example.air run data get storage cc2:player_nbt root.Air
 ```
 
+### `#cc2:is_in_adventure_zone`
+
+- Hook only; not callable
+- Return `1` if the player is in an adventure mode zone
+- **Neither** success **nor** failure should be returned if the player is not in such zone
+
+Example:
+```mcfunction
+# this function is hooked on #cc2:is_in_adventure_zone
+execute if predicate example:is_in_the_void_biome run return 1
+```
+
 ### `#minecraft:tick`
 
 - `cc2:first_tick` should be the first one
