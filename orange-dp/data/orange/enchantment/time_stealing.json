@@ -1,0 +1,250 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.orange.time_stealing",
+    "fallback": "Time Stealing"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "orange:time_stealing/ench_attacker"
+        },
+        "enchanted": "attacker",
+        "requirements": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "head": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "chest": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "legs": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "feet": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "attacker",
+                  "predicate": {
+                    "equipment": {
+                      "head": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "chest": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "legs": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "feet": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "orange:time_stealing/ench_victim"
+            },
+            {
+              "type": "minecraft:play_sound",
+              "pitch": 1,
+              "sound": {
+                "sound_id": "orange:enchant.time_stealing.hit"
+              },
+              "volume": 1
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "requirements": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "head": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "chest": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "legs": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "feet": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "attacker",
+                  "predicate": {
+                    "equipment": {
+                      "head": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "chest": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "legs": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      },
+                      "feet": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "orange:time_stablizing"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 2
+}

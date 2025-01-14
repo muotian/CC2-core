@@ -1,0 +1,47 @@
+{
+  "enchant.time_releasing.hit": {
+    "sounds": [
+      {
+        "name": "mob/breeze/wind_burst1",
+        "pitch": 2.4
+      },
+      {
+        "name": "mob/breeze/wind_burst2",
+        "pitch": 2.4
+      },
+      {
+        "name": "mob/breeze/wind_burst3",
+        "pitch": 2.4
+      }
+    ],
+    "subtitle": "subtitles.orange.time_releasing.hit"
+  },
+  "enchant.time_stealing.hit": {
+    "sounds": [
+      {
+        "name": "minecraft:mob/endermen/portal",
+        "pitch": 0.75,
+        "volume": 0.75
+      },
+      {
+        "name": "minecraft:mob/endermen/portal2",
+        "pitch": 0.75,
+        "volume": 0.75
+      }
+    ],
+    "subtitle": "subtitles.orange.time_stealing.hit"
+  },
+  "enchant.time_stablizing.hit": {
+    "sounds": [
+      {
+        "name": "minecraft:entity/endereye/dead1",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:entity/endereye/dead2",
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "subtitles.orange.time_stablizing.hit"
+  }
+}

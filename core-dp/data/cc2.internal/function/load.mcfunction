@@ -35,7 +35,7 @@ execute unless data storage cc2.internal:player_storage_base root run data modif
 
 # Gamerule
 gamerule commandBlockOutput false
-gamerule doMobSpawning true
+#gamerule doMobSpawning true
 gamerule doDaylightCycle false
 time set midnight
 gamerule doWeatherCycle false

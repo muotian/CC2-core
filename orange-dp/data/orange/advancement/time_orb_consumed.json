@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "not_so_yummy_ain_it": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:poisonous_potato",
+          "predicates": {
+            "minecraft:custom_data": {
+              "orange": {
+                "id": "time_orb"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "orange:time_orb/consumed"
+  }
+}

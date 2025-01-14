@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0.8
+                },
+                "minecraft:food": {
+                  "nutrition": 2,
+                  "saturation": 1.2,
+                  "can_always_eat": true
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:max_stack_size": 16,
+                "minecraft:custom_data": "{orange:{id:\"time_orb\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.time_orb",
+                "fallback": "Time Orb"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "item.orange.time_orb.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.time_orb.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

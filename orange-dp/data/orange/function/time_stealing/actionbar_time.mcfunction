@@ -1,0 +1,3 @@
+$execute if score @s orange.time_stealing.level matches 1.. run data modify storage cc2:player_storage root.cc2.actionbar[{id:"orange:time_icon"}].text set value '[{"text":"","shadow_color":0},{"text":"\\ue013\\ue014","font":"cc2:space"},{"score":{"name":"@s","objective":"orange.time_stealing.level"},"font":"orange:time_icon"},{"text":"\\ue010\\ue014\\ue015","font":"cc2:space"},{"text":"-","color":"#$(target)","font":"orange:time_icon"},{"text":"\\ue010\\ue013\\ue014","font":"cc2:space"}]'
+
+execute unless score @s orange.time_stealing.level matches 1.. run data remove storage cc2:player_storage root.cc2.actionbar[{id:"orange:time_icon"}]

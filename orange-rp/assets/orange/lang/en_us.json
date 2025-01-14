@@ -1,0 +1,11 @@
+{
+  "enchantment.orange.time_releasing": "Time Releasing",
+  "enchantment.orange.time_stablizing": "Time Stablizing",
+  "enchantment.orange.time_stealing": "Time Stealing",
+  "item.orange.time_orb": "Time Orb",
+  "item.orange.time_orb.desc.0": "The materialization of some twisted time energy",
+  "item.orange.time_orb.desc.1": "Inverts time anomalies or time-related potion effects when consumed",
+  "subtitles.orange.time_releasing.hit": "Time enerngy pulses",
+  "subtitles.orange.time_stablizing.hit": "Time anomaly neutralizes",
+  "subtitles.orange.time_stealing.hit": "Time energy absorbs"
+}

@@ -1,0 +1,293 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.orange.time_releasing",
+    "fallback": "Time Releasing"
+  },
+  "effects": {
+    "minecraft:knockback": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 2
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "orange.time_stealing.level": -1
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 4
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "orange.time_stealing.level": -2
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 6
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "orange.time_stealing.level": -3
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 8
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "orange.time_stealing.level": -4
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 10
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "orange.time_stealing.level": -5
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 1
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:slowness": {
+                  "amplifier": 0
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 2
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:slowness": {
+                  "amplifier": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 3
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:slowness": {
+                  "amplifier": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 4
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:slowness": {
+                  "amplifier": 3
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 5
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:slowness": {
+                  "amplifier": {
+                    "min": 4
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "orange:time_stealing/clear"
+            },
+            {
+              "type": "minecraft:play_sound",
+              "pitch": 1,
+              "sound": {
+                "sound_id": "orange:enchant.time_releasing.hit"
+              },
+              "volume": 1
+            },
+            {
+              "type": "minecraft:spawn_particles",
+              "horizontal_position": {
+                "type": "entity_position"
+              },
+              "horizontal_velocity": {},
+              "particle": {
+                "type": "minecraft:gust"
+              },
+              "vertical_position": {
+                "type": "entity_position",
+                "offset": 1
+              },
+              "vertical_velocity": {}
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "orange.time_stealing.level": {
+                "max": -1
+              }
+            }
+          }
+        ]
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "orange:time_releasing/clear_slowness"
+            },
+            {
+              "type": "minecraft:play_sound",
+              "pitch": 1,
+              "sound": {
+                "sound_id": "orange:enchant.time_releasing.hit"
+              },
+              "volume": 1
+            },
+            {
+              "type": "minecraft:spawn_particles",
+              "horizontal_position": {
+                "type": "entity_position"
+              },
+              "horizontal_velocity": {},
+              "particle": {
+                "type": "minecraft:gust"
+              },
+              "vertical_position": {
+                "type": "entity_position",
+                "offset": 1
+              },
+              "vertical_velocity": {}
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:slowness": {}
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 2
+}
