@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "orange:time_releasing": 1,
+                  "orange:desc/time_releasing_0": 1,
+                  "orange:desc/time_releasing_1": 1
+                }
+              }
+            }
+          ] 
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

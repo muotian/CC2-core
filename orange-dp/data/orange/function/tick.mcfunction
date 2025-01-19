@@ -4,3 +4,5 @@ execute as @e[scores={orange.time_stealing.duration=1..}] at @s run function ora
 execute as @e[scores={orange.time_stealing.duration=1}] run function orange:time_stealing/clear
 scoreboard players remove @e[scores={orange.time_stealing.duration=1..}] orange.time_stealing.duration 1
 scoreboard players reset @e[scores={orange.time_stealing.duration=0}] orange.time_stealing.duration
+
+execute as @a[scores={orange.dead=1..}] run function orange:player_dead

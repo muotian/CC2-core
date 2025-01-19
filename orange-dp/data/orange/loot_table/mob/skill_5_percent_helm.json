@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "asset_id": "orange:invisible"
+                },
+                "minecraft:enchantments": {
+                  "orange:mob/targeting_moved": 5
+                },
+                "minecraft:custom_data": {
+                  "orange": {
+                    "mob": {
+                      "targeting_moved": {
+                        "command": "tellraw @a {\"score\":{\"name\":\"#gametime\",\"objective\":\"cc2\"}}"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ] 
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    "orange:time_impulse",
+    "orange:desc/time_impulse",
+    "orange:time_punishment",
+    "orange:desc/time_punishment",
+    "orange:time_releasing",
+    "orange:desc/time_releasing_0",
+    "orange:desc/time_releasing_1",
+    "orange:time_stablizing",
+    "orange:desc/time_stablizing_0",
+    "orange:desc/time_stablizing_1",
+    "orange:time_stealing",
+    "orange:desc/time_stealing"
+  ]
+}

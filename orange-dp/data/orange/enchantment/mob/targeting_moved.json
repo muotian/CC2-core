@@ -1,0 +1,66 @@
+{
+  "anvil_cost": 64,
+  "description": "",
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "orange:mob/triggers/targeting_moved"
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "targeted_entity": {}
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "orange.mob.muf_targeting_moved": 1
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "range": {
+              "max": {
+                "type": "minecraft:enchantment_level",
+                "amount": {
+                  "type": "minecraft:linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              },
+              "min": 1
+            },
+            "value": {
+              "type": "minecraft:uniform",
+              "max": 100,
+              "min": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "max_level": 100,
+  "min_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "head"
+  ],
+  "supported_items": [],
+  "weight": 1
+}

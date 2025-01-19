@@ -1,8 +1,8 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.orange.time_stealing",
-    "fallback": "Time Stealing"
+    "translate": "enchantment.orange.time_impulse",
+    "fallback": "Time Impulse"
   },
   "effects": {
     "minecraft:post_attack": [
@@ -13,17 +13,9 @@
           "effects": [
             {
               "type": "minecraft:apply_mob_effect",
-              "max_amplifier": {
-                "type": "minecraft:linear",
-                "base": 1,
-                "per_level_above_first": 1
-              },
+              "max_amplifier": 5,
               "max_duration": 0.05,
-              "min_amplifier": {
-                "type": "minecraft:linear",
-                "base": 1,
-                "per_level_above_first": 1
-              },
+              "min_amplifier": 5,
               "min_duration": 0.05,
               "to_apply": [
                 "minecraft:luck"
@@ -37,6 +29,27 @@
         },
         "enchanted": "attacker",
         "requirements": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "attacker",
+                "scores": {
+                  "orange.is_sprinting": 1
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "flags": {
+                    "is_flying": true
+                  }
+                }
+              }
+            ]
+          },
           {
             "condition": "minecraft:inverted",
             "term": {
@@ -142,17 +155,9 @@
           "effects": [
             {
               "type": "minecraft:apply_mob_effect",
-              "max_amplifier": {
-                "type": "minecraft:linear",
-                "base": 1,
-                "per_level_above_first": 1
-              },
+              "max_amplifier": 5,
               "max_duration": 0.05,
-              "min_amplifier": {
-                "type": "minecraft:linear",
-                "base": 1,
-                "per_level_above_first": 1
-              },
+              "min_amplifier": 5,
               "min_duration": 0.05,
               "to_apply": [
                 "minecraft:unluck"
@@ -174,6 +179,27 @@
         },
         "enchanted": "attacker",
         "requirements": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "attacker",
+                "scores": {
+                  "orange.is_sprinting": 1
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "flags": {
+                    "is_flying": true
+                  }
+                }
+              }
+            ]
+          },
           {
             "condition": "minecraft:inverted",
             "term": {
@@ -274,12 +300,12 @@
       }
     ]
   },
-  "exclusive_set": "#orange:exclusive_set/time_stealing",
+  "exclusive_set": "#orange:exclusive_set/time_impulse",
   "max_cost": {
     "base": 65,
     "per_level_above_first": 9
   },
-  "max_level": 5,
+  "max_level": 1,
   "min_cost": {
     "base": 15,
     "per_level_above_first": 9

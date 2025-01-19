@@ -276,6 +276,7 @@
       }
     ]
   },
+  "exclusive_set": "#orange:exclusive_set/time_releasing",
   "max_cost": {
     "base": 65,
     "per_level_above_first": 9
@@ -288,6 +289,6 @@
   "slots": [
     "any"
   ],
-  "supported_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
   "weight": 2
 }
