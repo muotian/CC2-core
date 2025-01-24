@@ -112,6 +112,62 @@
           }
         ]
       }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:change_item_damage",
+              "amount": 1
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "orange:time_stablizing/damaged"
+            },
+            {
+              "type": "minecraft:play_sound",
+              "pitch": 1,
+              "sound": {
+                "sound_id": "orange:enchant.time_stablizing.hit"
+              },
+              "volume": 1
+            },
+            {
+              "type": "minecraft:spawn_particles",
+              "horizontal_position": {
+                "type": "in_bounding_box"
+              },
+              "horizontal_velocity": {
+                "base": 0,
+                "movement_scale": 0
+              },
+              "particle": {
+                "type": "minecraft:large_smoke"
+              },
+              "vertical_position": {
+                "type": "in_bounding_box"
+              },
+              "vertical_velocity": {
+                "base": 0,
+                "movement_scale": 0
+              }
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "orange.time_stablizing.damage": {
+                "min": 1
+              }
+            }
+          }
+        ]
+      }
     ]
   },
   "max_cost": {

@@ -18,6 +18,7 @@
                   "saturation": 1.2,
                   "can_always_eat": true
                 },
+                "minecraft:item_model": "minecraft:chorus_fruit",
                 "minecraft:rarity": "rare",
                 "minecraft:max_stack_size": 16,
                 "minecraft:custom_data": "{orange:{id:\"time_orb\"}}"
@@ -34,6 +35,7 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                "",
                 {
                   "translate": "item.orange.time_orb.desc.0",
                   "color": "white",

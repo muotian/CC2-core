@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "orange:time_releasing": 1,
+                  "orange:desc/time_releasing_0": 1,
+                  "orange:desc/time_releasing_1": 1
+                },
+                "minecraft:custom_data": "{orange:{id:\"time_releasing_stick\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "minecraft:base_attack_damage",
+                  "amount": 0,
+                  "attribute": "minecraft:attack_damage",
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "minecraft:base_attack_speed",
+                  "amount": -1,
+                  "attribute": "minecraft:attack_speed",
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.time_releasing_stick",
+                "fallback": "Rod of Releasing",
+                "color": "gold",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.time_releasing_stick.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.time_releasing_stick.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

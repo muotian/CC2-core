@@ -1,4 +1,5 @@
 {
+  "type": "minecraft:equipment",
   "pools": [
     {
       "entries": [
@@ -11,18 +12,12 @@
               "components": {
                 "minecraft:equippable": {
                   "slot": "head",
-                  "asset_id": "orange:invisible"
-                },
-                "minecraft:enchantments": {
-                  "orange:mob/targeting_moved": 5
+                  "asset_id": "orange:invisible",
+                  "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:custom_data": {
-                  "orange": {
-                    "mob": {
-                      "targeting_moved": {
-                        "command": "tellraw @a {\"score\":{\"name\":\"#gametime\",\"objective\":\"cc2\"}}"
-                      }
-                    }
+                  "cc2": {
+                    "unobtainable": {}
                   }
                 }
               }

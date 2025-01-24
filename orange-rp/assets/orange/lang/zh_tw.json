@@ -1,3 +1,23 @@
 {
-  
+  "enchantment_desc.orange.time_impulse": " 衝刺或滑翔狀態時，從目標竊取最大量的「時間能量」。",
+  "enchantment_desc.orange.time_punishment": " 對於受到時間異常影響的目標造成額外傷害。",
+  "enchantment_desc.orange.time_releasing.0": " 以虛空為源，向目標釋放與其所缺失的等量「時間能量」，",
+  "enchantment_desc.orange.time_releasing.1": " 並導致目標遭擊飛。基於未知原因，對於緩速藥水效果也會產生影響。",
+  "enchantment_desc.orange.time_stablizing.0": " 覆蓋全身時，中和一切接觸到的時間異常效果。",
+  "enchantment_desc.orange.time_stablizing.1": " 中和由敵人造成的效果會使附加的裝備加速損壞。",
+  "enchantment_desc.orange.time_stealing": " 從目標竊取「時間能量」。此效果可疊加。",
+  "enchantment.orange.time_impulse": "時之衝擊",
+  "enchantment.orange.time_punishment": "異時之懲戒",
+  "enchantment.orange.time_releasing": "時之釋擊",
+  "enchantment.orange.time_stablizing": "時間穩定化",
+  "enchantment.orange.time_stealing": "時之竊擊",
+  "item.orange.time_impulse_axe": "衝擊之斧",
+  "item.orange.time_impulse_axe.desc.0": "一把結實的斧頭，為了達成最大的竊時效果而進行了附魔。",
+  "item.orange.time_impulse_axe.desc.1": "由於儀式中的瑕疵，其效果僅在衝擊力足夠時才能觸發。",
+  "item.orange.time_orb": "時之結晶",
+  "item.orange.time_orb.desc.0": "由扭曲的「時間能量」具象化而成的物體。",
+  "item.orange.time_orb.desc.1": "將其攝入能反轉時間異常及速度相關藥水的效果。",
+  "subtitles.orange.time_releasing.hit": "時間能量脈動聲",
+  "subtitles.orange.time_stablizing.hit": "時間異常中和聲",
+  "subtitles.orange.time_stealing.hit": "時間能量吸收聲"
 }

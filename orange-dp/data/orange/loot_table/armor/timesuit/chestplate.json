@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 3.0,
+                    "id": "minecraft:armor.chestplate",
+                    "operation": "add_value",
+                    "slot": "chest"
+                  }
+                ],
+                "minecraft:dyed_color": {
+                  "rgb": 14343899,
+                  "show_in_tooltip": false
+                },
+                "minecraft:enchantments": {
+                  "orange:time_stablizing": 1,
+                  "orange:desc/time_stablizing_0": 1,
+                  "orange:desc/time_stablizing_1": 1
+                },
+                "minecraft:max_damage": 240,
+                "minecraft:rarity": "rare",
+                "minecraft:trim": {
+                  "material": "minecraft:copper",
+                  "pattern": "minecraft:spire",
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_data": "{orange:{id:\"timesuit_chestplate\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.timesuit_chestplate",
+                "fallback": "Timesuit Upper Part"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.timesuit.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.timesuit.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

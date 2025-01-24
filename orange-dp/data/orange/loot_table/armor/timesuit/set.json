@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/timesuit/helmet"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/timesuit/chestplate"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/timesuit/leggings"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/timesuit/boots"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

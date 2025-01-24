@@ -1,0 +1,44 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "orange:time_stablizing"
+            }
+          ]
+        }
+      },
+      "chest": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "orange:time_stablizing"
+            }
+          ]
+        }
+      },
+      "legs": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "orange:time_stablizing"
+            }
+          ]
+        }
+      },
+      "feet": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "orange:time_stablizing"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

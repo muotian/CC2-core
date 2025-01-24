@@ -1,0 +1,106 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantments": {
+                  "orange:hidden/time_stealing_potion": 1
+                },
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:potion_contents": {
+                  "custom_color": 8355711,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:unluck",
+                      "ambient": true,
+                      "amplifier": 1,
+                      "duration": 2,
+                      "show_icon": false,
+                      "show_particles": false
+                    }
+                  ]
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:use_remainder": {
+                  "id": "minecraft:poisonous_potato",
+                  "components": {
+                    "!minecraft:consumable": {},
+                    "!minecraft:food": {},
+                    "minecraft:custom_name": "{\"text\":\"\"}",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:hide_tooltip": {},
+                    "minecraft:item_model": "minecraft:lingering_potion",
+                    "minecraft:potion_contents": {
+                      "custom_color": 8355711,
+                      "custom_effects": [
+                        {
+                          "id": "minecraft:unluck",
+                          "ambient": true,
+                          "amplifier": 1,
+                          "duration": 2,
+                          "show_icon": false,
+                          "show_particles": false
+                        }
+                      ]
+                    },
+                    "minecraft:custom_data": "{orange:{id:\"time_stealing_potion.placeholder\"}}"
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.time_stealing_potion",
+                "fallback": "Lingering Potion of Time Stealing",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "item.orange.time_stealing_potion.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.time_stealing_potion.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "orange": {
+                  "id": "time_stealing_potion"
+                },
+                "cooldown": {
+                  "mode": "item",
+                  "length": 8,
+                  "end_callback": {
+                    "type": "item_modifier",
+                    "value": "orange:time_stealing_potion.usable"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

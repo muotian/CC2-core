@@ -41,7 +41,7 @@
               "function": "minecraft:set_name",
               "name": {
                 "translate": "item.orange.time_impulse_axe",
-                "fallback": "Time Impulse Axe",
+                "fallback": "Axe of Impulse",
                 "color": "gold",
                 "italic": false
               },

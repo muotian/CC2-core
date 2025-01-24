@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:area_effect_cloud",
+    "nbt": "{potion_contents:{custom_color:8355711,custom_effects:[{duration:2,show_icon:0b,amplifier:1b,ambient:1b,id:\"minecraft:unluck\",show_particles:0b}]},Age:0}"
+  }
+}

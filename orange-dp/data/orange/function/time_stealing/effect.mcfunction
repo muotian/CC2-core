@@ -2,6 +2,9 @@ attribute @s minecraft:attack_speed modifier remove orange:time_stealing
 attribute @s minecraft:block_break_speed modifier remove orange:time_stealing
 attribute @s minecraft:movement_speed modifier remove orange:time_stealing
 
+scoreboard players operation @s orange.time_stealing.level_rev = @s orange.time_stealing.level
+scoreboard players operation @s orange.time_stealing.level_rev *= #-1 number
+
 execute if score @s orange.time_stealing.level matches 0 run execute as @s[type=minecraft:player] run function orange:time_stealing/actionbar_clear
 execute if score @s orange.time_stealing.level matches 0 run scoreboard players reset @s orange.time_stealing.duration
 execute if score @s orange.time_stealing.level matches 0 run return run scoreboard players reset @s orange.time_stealing.level

@@ -1,0 +1,40 @@
+{
+  "anvil_cost": 64,
+  "description": "",
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "is_direct": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "max_level": 20,
+  "min_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "head"
+  ],
+  "supported_items": [],
+  "weight": 1
+}
