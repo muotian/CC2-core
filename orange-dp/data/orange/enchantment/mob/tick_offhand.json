@@ -1,0 +1,40 @@
+{
+  "anvil_cost": 64,
+  "description": "",
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "orange:mob/triggers/tick_offhand"
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "orange.mob.muf_tick_offhand": 1
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "offhand"
+  ],
+  "supported_items": [],
+  "weight": 1
+}

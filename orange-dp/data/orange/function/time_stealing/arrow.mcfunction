@@ -1,0 +1,3 @@
+execute unless data entity @s weapon.components."minecraft:enchantments".levels."orange:time_stealing" run data modify entity @s weapon.components."minecraft:enchantments".levels."orange:time_stealing" set from entity @s item.components."minecraft:enchantments".levels."orange:time_stealing"
+execute unless data entity @s item.components."minecraft:enchantments".levels."orange:time_stealing" run data modify entity @s item.components."minecraft:enchantments".levels."orange:time_stealing" set from entity @s weapon.components."minecraft:enchantments".levels."orange:time_stealing"
+tag @s add orange.time_stealing_arrow

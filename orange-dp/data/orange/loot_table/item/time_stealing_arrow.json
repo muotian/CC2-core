@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantments": {
+                  "orange:time_stealing": 1
+                },
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:potion_contents": {
+                  "custom_color": 8355711
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": "{orange:{id:\"time_stealing_arrow\"}}"
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.time_stealing_arrow",
+                "fallback": "Arrow of Time Stealing",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.time_stealing_arrow.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.time_stealing_arrow.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

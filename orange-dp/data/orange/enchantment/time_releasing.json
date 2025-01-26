@@ -274,6 +274,23 @@
           }
         ]
       }
+    ],
+    "minecraft:projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "orange:time_releasing/arrow"
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:arrow"
+            }
+          }
+        ]
+      }
     ]
   },
   "exclusive_set": "#orange:exclusive_set/time_releasing",

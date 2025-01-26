@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:item/gravity_cancelling_arrow"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:item/time_releasing_arrow"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:item/time_stealing_arrow"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

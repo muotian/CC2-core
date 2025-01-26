@@ -272,6 +272,23 @@
           }
         ]
       }
+    ],
+    "minecraft:projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "orange:time_stealing/arrow"
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:arrow"
+            }
+          }
+        ]
+      }
     ]
   },
   "exclusive_set": "#orange:exclusive_set/time_stealing",
@@ -288,5 +305,5 @@
     "any"
   ],
   "supported_items": "#minecraft:enchantable/sharp_weapon",
-  "weight": 2
+  "weight": 1
 }
