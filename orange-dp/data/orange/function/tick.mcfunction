@@ -1,5 +1,7 @@
 execute as @a store result score @s orange.is_sprinting if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_sprinting:true}}}
 
+execute as @e[type=minecraft:marker,tag=orange.spawner] at @s unless block ~ ~ ~ minecraft:spawner run kill @s
+
 execute as @e[scores={orange.time_stealing.duration=1..}] at @s run function orange:time_stealing/particle
 execute as @e[scores={orange.time_stealing.duration=1}] run function orange:time_stealing/clear
 scoreboard players remove @e[scores={orange.time_stealing.duration=1..}] orange.time_stealing.duration 1
@@ -9,6 +11,12 @@ execute as @e[scores={orange.gravity_cancelling.duration=1..}] at @s run functio
 execute as @e[scores={orange.gravity_cancelling.duration=1}] run function orange:gravity_cancelling/clear
 scoreboard players remove @e[scores={orange.gravity_cancelling.duration=1..}] orange.gravity_cancelling.duration 1
 scoreboard players reset @e[scores={orange.gravity_cancelling.duration=0}] orange.gravity_cancelling.duration
+
+execute as @a[scores={orange.timeless_lily_pad.charge_time=1..},advancements={orange:timeless_lily_pad.charging=false}] run function orange:timeless_lily_pad/released
+scoreboard players reset @a[scores={orange.timeless_lily_pad.charge_time=1..},advancements={orange:timeless_lily_pad.charging=false}] orange.timeless_lily_pad.charge_time
+advancement revoke @a[advancements={orange:timeless_lily_pad.charging=true}] only orange:timeless_lily_pad.charging
+execute as @e[type=minecraft:item,tag=orange.timeless_lily_pad] run function orange:timeless_lily_pad/flying
+execute as @e[type=minecraft:item_display,tag=orange.timeless_lily_pad,predicate=orange:timeless_lily_pad_error] run function orange:timeless_lily_pad/error
 
 execute as @e[type=minecraft:potion,predicate=!orange:has_been_shot] run function orange:new_potion
 execute as @e[type=minecraft:marker,tag=orange.time_stealing_potion.flying,predicate=!orange:has_vehicle] run function orange:time_stealing_potion/detector_landed

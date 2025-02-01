@@ -18,6 +18,13 @@
                       "id": "orange:mob_adjustment",
                       "operation": "add_multiplied_base",
                       "slot": "head"
+                    },
+                    {
+                      "type": "minecraft:max_health",
+                      "amount": -5.0,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_value",
+                      "slot": "head"
                     }
                   ]
                 },

@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:food": {},
+                "!minecraft:consumable": {},
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantments": {
+                  "orange:time_stealing": 1,
+                  "orange:desc/time_stealing": 1,
+                  "orange:time_punishment": 5,
+                  "orange:desc/time_punishment": 1
+                },
+                "minecraft:item_model": "orange:timeless_lily_pad",
+                "minecraft:max_stack_size": 1
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.timeless_lily_pad",
+                "fallback": "Timeless Lily Pad",
+                "color": "gold",
+                "italic": false
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.timeless_lily_pad.desc",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "cooldown": {
+                  "mode": "item",
+                  "end_callback": {
+                    "type": "item_modifier",
+                    "value": "orange:timeless_lily_pad.default"
+                  },
+                  "length": 1
+                },
+                "orange": {
+                  "id": "timeless_lily_pad"
+                }
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "orange:timeless_lily_pad.default"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

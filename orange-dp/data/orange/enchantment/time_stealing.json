@@ -38,6 +38,13 @@
         "enchanted": "attacker",
         "requirements": [
           {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#orange:possesses_time"
+            }
+          },
+          {
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:any_of",
@@ -174,6 +181,13 @@
         },
         "enchanted": "attacker",
         "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#orange:possesses_time"
+            }
+          },
           {
             "condition": "minecraft:inverted",
             "term": {

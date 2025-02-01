@@ -1,4 +1,4 @@
-advancement revoke @s only orange:time_orb_consumed
+advancement revoke @s only orange:time_orb.consumed
 
 scoreboard players operation @s orange.time_stealing.level *= #-1 number
 function orange:time_stealing/effect

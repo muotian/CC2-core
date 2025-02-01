@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "let_me_see_see": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {
+                "orange": {
+                  "id": "timeless_lily_pad",
+                  "mode": "flying"
+                }
+              }
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"orange.timeless_lily_pad.thrower\"]}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "orange:timeless_lily_pad/unstable"
+  }
+}

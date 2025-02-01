@@ -22,6 +22,11 @@ scoreboard objectives add orange.time_stealing.time dummy
 
 scoreboard objectives add orange.time_stablizing.damage dummy
 
+scoreboard objectives add orange.timeless_lily_pad.charge_time dummy
+scoreboard objectives add orange.timeless_lily_pad.charging_slot dummy
+scoreboard objectives add orange.timeless_lily_pad.id dummy
+scoreboard objectives add orange.timeless_lily_pad.add_damage dummy
+
 scoreboard objectives add orange.mob.muf_falling dummy
 scoreboard objectives add orange.mob.muf_on_ground dummy
 scoreboard objectives add orange.mob.muf_post_attack dummy

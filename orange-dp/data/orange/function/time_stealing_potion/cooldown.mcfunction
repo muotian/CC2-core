@@ -16,4 +16,4 @@ data remove storage cc2:player_storage root.orange.time_stealing_potion
 
 function cc2:save_player_storage
 
-advancement revoke @s only orange:time_stealing_potion_used
+advancement revoke @s only orange:time_stealing_potion.used

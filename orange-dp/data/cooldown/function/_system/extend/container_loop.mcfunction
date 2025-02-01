@@ -4,7 +4,6 @@ scoreboard players operation $target cooldown.time += $off_time cooldown.time
 
 scoreboard players operation $duration cooldown.time = $target cooldown.time
 scoreboard players operation $duration cooldown.time -= $gametime cooldown.time
-scoreboard players add $duration cooldown.time 1
 
 scoreboard players operation $modulo cooldown.time = $target cooldown.time
 scoreboard players operation $modulo cooldown.time %= #12000 cooldown.number

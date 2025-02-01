@@ -27,13 +27,19 @@ out vec2 texCoord0;
 out vec2 texCoord1;
 out vec2 texCoord2;
 
+const vec2 corners[4] = vec2[4](
+  vec2(0.0, 0.0),
+  vec2(0.0, 1.0),
+  vec2(1.0, 1.0),
+  vec2(1.0, 0.0)
+);
+
 void main() {
-    vec2 guiPixel = vec2(ProjMat[0][0], ProjMat[1][1]);
-
-    gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
-
-    ivec4 vColor = ivec4(texture(Sampler0, UV0) * 255 + vec4(0.5));
+    vec2 size = 16./textureSize(Sampler0, 0);
+    ivec4 vColor = ivec4(textureLod(Sampler0, UV0 - (corners[gl_VertexID%4] * size), -9999) * 255 + vec4(0.5));
     ivec4 iColor = ivec4(Color * 255 + vec4(0.5));
+    vec3 mPosition = Position;
+    vec4 mColor = Color;
 
     if (vColor.a == 250) {
         float duration = (iColor.r * 4 + int(iColor.g / 64)) * 20;
@@ -46,24 +52,27 @@ void main() {
             current -= 12000;
         }
         if (duration == 0 || current > target || target - current > duration) {
-            iColor.a = 0;
+            mColor.a = 0;
         }
         else if (vColor.rgb == ivec3(255, 255, 255)
          && (gl_VertexID % 4 == 0 || gl_VertexID % 4 == 3)) {
-            gl_Position.y += guiPixel.y * int((1 - (target - current) / duration) * 16);
+            mPosition.y += int((1 - (target - current) / duration) * 16);
         }
         else if (vColor.rgb == ivec3(128, 128, 128)) {
             if (gl_VertexID % 4 == 0 || gl_VertexID % 4 == 1) {
-                gl_Position.x += guiPixel.x * int((1 - (target - current) / duration) * 13 + 2);
+                mPosition.x += int((1 - (target - current) / duration) * 13 + 2);
             }
             else {
-                gl_Position.x -= guiPixel.x;
+                mPosition.x -= 1;
             }
         }
     }
+    
+    // vanilla behavior
+    gl_Position = ProjMat * ModelViewMat * vec4(mPosition, 1.0);
 
     vertexDistance = fog_distance(Position, FogShape);
-    vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, vec4(iColor) / 255) * texelFetch(Sampler2, UV2 / 16, 0);
+    vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, mColor) * texelFetch(Sampler2, UV2 / 16, 0);
     texCoord0 = UV0;
     texCoord1 = UV1;
     texCoord2 = UV2;

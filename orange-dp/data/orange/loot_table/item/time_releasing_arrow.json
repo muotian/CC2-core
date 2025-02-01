@@ -42,12 +42,7 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.time_releasing_arrow.desc.0",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "translate": "item.orange.time_releasing_arrow.desc.1",
+                  "translate": "item.orange.time_releasing_arrow.desc",
                   "color": "white",
                   "italic": false
                 }

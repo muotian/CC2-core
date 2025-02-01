@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "unlimited_powa_hehe": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:poisonous_potato",
+          "predicates": {
+            "minecraft:custom_data": {
+              "orange": {
+                "id": "timeless_lily_pad"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "orange:timeless_lily_pad/charging"
+  }
+}

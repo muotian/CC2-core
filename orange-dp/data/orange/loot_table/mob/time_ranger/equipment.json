@@ -14,7 +14,7 @@
                   "modifiers": [
                     {
                       "type": "minecraft:movement_speed",
-                      "amount": 0.5,
+                      "amount": 0.1,
                       "id": "orange:mob_adjustment",
                       "operation": "add_multiplied_base",
                       "slot": "head"

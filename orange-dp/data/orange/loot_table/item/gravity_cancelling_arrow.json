@@ -42,12 +42,7 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.gravity_cancelling_arrow.desc.0",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "translate": "item.orange.gravity_cancelling_arrow.desc.1",
+                  "translate": "item.orange.gravity_cancelling_arrow.desc",
                   "color": "white",
                   "italic": false
                 }

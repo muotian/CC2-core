@@ -1,0 +1,75 @@
+[
+  
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:consumable": {}
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "id": "minecraft:base_attack_damage",
+        "amount": 2.5,
+        "attribute": "minecraft:attack_damage",
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "id": "minecraft:base_attack_speed",
+        "amount": -3.2,
+        "attribute": "minecraft:attack_speed",
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "id": "orange:thorwn",
+        "amount": -1.0,
+        "attribute": "minecraft:attack_damage",
+        "operation": "add_multiplied_total",
+        "slot": "mainhand"
+      },
+      {
+        "id": "orange:thorwn",
+        "amount": -1.0,
+        "attribute": "minecraft:attack_speed",
+        "operation": "add_multiplied_total",
+        "slot": "mainhand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "orange": {
+        "mode": "flying"
+      }
+    }
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "ops": [
+      {
+        "op": "replace",
+        "source": "root.serial",
+        "target": "orange.serial"
+      }
+    ],
+    "source": {
+      "type": "minecraft:storage",
+      "source": "orange:macro"
+    }
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "values": [
+        "flying"
+      ],
+      "mode": "replace_section",
+      "offset": 0,
+      "size": 1
+    }
+  }
+]

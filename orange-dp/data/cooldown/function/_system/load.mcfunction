@@ -8,4 +8,5 @@ scoreboard players set #20 cooldown.number 20
 scoreboard players set #12000 cooldown.number 12000
 scoreboard players set #16384 cooldown.number 16384
 
+function cooldown:_system/get_gametime
 function cooldown:demo/load

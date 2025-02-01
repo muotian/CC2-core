@@ -24,7 +24,7 @@ void main() {
     }
     else if (vColor == ivec4(255, 255, 255, 250)) {
         color.rgb = vec3(1.0);
-        color.a = 128 / 255.0;
+        color.a = 127.0 / 255.0;
     }
     else if (vColor == ivec4(0, 0, 0, 250)) {
         color.rgb = vec3(0.0);

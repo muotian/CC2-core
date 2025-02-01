@@ -1,4 +1,5 @@
 execute if predicate orange:is_wearing_full_stablizing at @s run return run function orange:time_stablizing/attacker
+execute as @s[type=!#orange:possesses_time] run return fail
 execute at @s run playsound orange:enchant.time_stealing.hit player @a ~ ~ ~
 scoreboard players set $time_stealing orange.temp 1
 execute if score $time_stealing.cmd_attacker orange.arg matches 1.. run scoreboard players operation $time_stealing orange.temp = $time_stealing.cmd_attacker orange.arg

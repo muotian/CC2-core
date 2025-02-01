@@ -26,8 +26,7 @@
           }
         ],
         "fallback": {
-          "type": "minecraft:model",
-          "model": "minecraft:block/air"
+          "type": "minecraft:empty"
         }
       }
     ]
