@@ -22,8 +22,12 @@ execute as @e[type=minecraft:potion,predicate=!orange:has_been_shot] run functio
 execute as @e[type=minecraft:marker,tag=orange.time_stealing_potion.flying,predicate=!orange:has_vehicle] run function orange:time_stealing_potion/detector_landed
 execute as @e[type=minecraft:marker,tag=orange.time_stealing_potion.landed] run function orange:time_stealing_potion/detector_check
 
+execute as @e[type=minecraft:fishing_bobber,tag=orange.no_gravity_rod.bobber,tag=!orange.no_gravity_rod.shot] run function orange:no_gravity_rod/shoot
+
 execute as @e[type=minecraft:arrow,tag=orange.gravity_cancelling_arrow] at @s run function orange:gravity_cancelling/arrow_particle
 execute as @e[type=minecraft:arrow,tag=orange.time_releasing_arrow] at @s run function orange:time_releasing/arrow_particle
 execute as @e[type=minecraft:arrow,tag=orange.time_stealing_arrow] at @s run function orange:time_stealing/arrow_particle
+
+execute as @e[type=minecraft:item,predicate=orange:is_dropped_time_orb] at @s positioned ~ ~0.25 ~ facing entity @p feet run function orange:time_orb/item_timer
 
 execute as @a[scores={orange.dead=1..}] run function orange:player_dead

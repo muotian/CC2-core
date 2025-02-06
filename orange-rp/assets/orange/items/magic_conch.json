@@ -1,0 +1,57 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "minecraft:item/nautilus_shell"
+            },
+            {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "cases": [
+                {
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "cooldown:bar",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": 65535
+                      },
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 0,
+                        "default": 0
+                      }
+                    ]
+                  },
+                  "when": "gui"
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:empty"
+              }
+            }
+          ]
+        },
+        "when": "active"
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/nautilus_shell"
+    },
+    "index": 0,
+    "property": "minecraft:custom_model_data"
+  }
+}

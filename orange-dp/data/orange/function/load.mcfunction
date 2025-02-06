@@ -27,6 +27,9 @@ scoreboard objectives add orange.timeless_lily_pad.charging_slot dummy
 scoreboard objectives add orange.timeless_lily_pad.id dummy
 scoreboard objectives add orange.timeless_lily_pad.add_damage dummy
 
+scoreboard objectives add orange.time_orb dummy
+
+scoreboard objectives add orange.mob.muf_killed dummy
 scoreboard objectives add orange.mob.muf_falling dummy
 scoreboard objectives add orange.mob.muf_on_ground dummy
 scoreboard objectives add orange.mob.muf_post_attack dummy
@@ -38,5 +41,6 @@ scoreboard objectives add orange.mob.muf_tick_offhand dummy
 scoreboard objectives add orange.misc.has_been_shot dummy
 
 scoreboard players set #-1 number -1
+scoreboard players set #3 number 3
 scoreboard players set #20 number 20
 scoreboard players set #24000 number 24000

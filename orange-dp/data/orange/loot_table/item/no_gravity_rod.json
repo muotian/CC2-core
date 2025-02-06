@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantments": {
+                  "levels": {
+                    "orange:hidden/no_gravity_rod": 1
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:unbreakable": {},
+                "minecraft:custom_data": "{orange:{id:\"no_gravity_rod\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.no_gravity_rod",
+                "fallback": "No Gravity Rod"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.no_gravity_rod.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.no_gravity_rod.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

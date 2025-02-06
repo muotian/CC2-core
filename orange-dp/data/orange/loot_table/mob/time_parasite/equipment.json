@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "amount": -1,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_value",
+                      "slot": "head"
+                    },
+                    {
+                      "type": "minecraft:max_health",
+                      "amount": -9,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_value",
+                      "slot": "head"
+                    },
+                    {
+                      "type": "minecraft:movement_speed",
+                      "amount": -0.08,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_multiplied_base",
+                      "slot": "head"
+                    },
+                    {
+                      "type": "minecraft:water_movement_efficiency",
+                      "amount": 1.0,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_value",
+                      "slot": "head"
+                    }
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "asset_id": "orange:invisible",
+                  "equip_sound": "minecraft:intentionally_empty"
+                },
+                "minecraft:enchantments": {
+                  "orange:mob/immune_fall": 1
+                },
+                "minecraft:custom_data": {
+                  "cc2": {
+                    "unobtainable": {}
+                  }
+                }
+              }
+            }
+          ] 
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

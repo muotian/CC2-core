@@ -5,16 +5,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:poisonous_potato",
+          "name": "minecraft:budding_amethyst",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:equippable": {
                   "slot": "head",
-                  "asset_id": "orange:invisible",
                   "equip_sound": "minecraft:intentionally_empty"
                 },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:enchantments": {
                   "orange:mob/targeting_moved": 20
                 },

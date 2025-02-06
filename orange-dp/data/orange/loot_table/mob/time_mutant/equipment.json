@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bubble_coral_block",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "amount": -2,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_value",
+                      "slot": "head"
+                    },
+                    {
+                      "type": "minecraft:max_health",
+                      "amount": -10,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_value",
+                      "slot": "head"
+                    },
+                    {
+                      "type": "minecraft:water_movement_efficiency",
+                      "amount": 1,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_value",
+                      "slot": "head"
+                    }
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantments": {
+                  "orange:mob/killed": 1,
+                  "orange:mob/targeting_moved": 50
+                },
+                "minecraft:custom_data": {
+                  "cc2": {
+                    "unobtainable": {}
+                  },
+                  "orange": {
+                    "mob": {
+                      "killed": {
+                        "command": "function orange:mob/time_mutant/split"
+                      },
+                      "targeting_moved": {
+                        "command": "function orange:mob/time_mutant/vomit"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ] 
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

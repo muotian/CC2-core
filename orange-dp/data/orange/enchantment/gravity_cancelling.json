@@ -10,7 +10,7 @@
         "affected": "victim",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "orange:gravity_cancelling/effect"
+          "function": "orange:gravity_cancelling/effect_motion_cancel"
         },
         "enchanted": "attacker"
       }

@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:bundle_contents": [],
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantments": {
+                  "levels": {
+                    "orange:hidden/mysterious_ore": 1
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:item_model": "minecraft:raw_copper",
+                "minecraft:rarity": "rare"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.mysterious_ore",
+                "fallback": "Mysterious Ore"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.mysterious_ore.desc",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "name": "minecraft:poisonous_potato"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

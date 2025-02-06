@@ -5,13 +5,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:poisonous_potato",
+          "name": "minecraft:sea_lantern",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
+                    {
+                      "type": "minecraft:max_health",
+                      "amount": -5,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_value",
+                      "slot": "head"
+                    },
                     {
                       "type": "minecraft:movement_speed",
                       "amount": 0.1,
@@ -23,7 +30,6 @@
                 },
                 "minecraft:equippable": {
                   "slot": "head",
-                  "asset_id": "orange:invisible",
                   "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:custom_data": {

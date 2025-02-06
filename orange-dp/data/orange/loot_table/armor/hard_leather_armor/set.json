@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/hard_leather_armor/helmet"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/hard_leather_armor/chestplate"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/hard_leather_armor/leggings"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/hard_leather_armor/boots"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "animation": "none",
+        "consume_seconds": 1e16,
+        "has_consume_particles": false
+      },
+      "minecraft:food": {
+        "can_always_eat": true,
+        "nutrition": 0,
+        "saturation": 0
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "values": [
+        "default"
+      ],
+      "mode": "replace_section",
+      "offset": 0,
+      "size": 1
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.orange.magic_conch.desc.inactive",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 2,
+    "size": 1
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "cooldown:utils/usable"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "you_shall_flyyyyy": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "entity": {
+          "type": "#orange:possesses_time"
+        },
+        "rod": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "orange": {
+                "id": "no_gravity_rod"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "orange:no_gravity_rod/hooked"
+  }
+}

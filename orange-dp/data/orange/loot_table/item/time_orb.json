@@ -20,7 +20,6 @@
                 },
                 "minecraft:item_model": "minecraft:chorus_fruit",
                 "minecraft:rarity": "rare",
-                "minecraft:max_stack_size": 16,
                 "minecraft:custom_data": "{orange:{id:\"time_orb\"}}"
               }
             },

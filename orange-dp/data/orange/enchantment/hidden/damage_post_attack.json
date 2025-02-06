@@ -1,0 +1,34 @@
+{
+  "anvil_cost": 64,
+  "description": "",
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 1
+        },
+        "enchanted": "victim"
+      }
+    ]
+  },
+  "exclusive_set": [
+    "minecraft:mending",
+    "minecraft:unbreaking"
+  ],
+  "max_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": [],
+  "weight": 1
+}

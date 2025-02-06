@@ -1,0 +1,58 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:submerged_mining_speed",
+        "amount": 0.8,
+        "id": "orange:magic_conch",
+        "operation": "add_value",
+        "slot": "hand"
+      },
+      {
+        "attribute": "minecraft:water_movement_efficiency",
+        "amount": 1.0,
+        "id": "orange:magic_conch",
+        "operation": "add_value",
+        "slot": "hand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:consumable": {},
+      "!food": {}
+    }
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "values": [
+        "active"
+      ],
+      "mode": "replace_section",
+      "offset": 0,
+      "size": 1
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.orange.magic_conch.desc.active",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 2,
+    "size": 1
+  },
+  {
+    "function": "minecraft:set_damage",
+    "add": true,
+    "damage": -0.051
+  }
+]

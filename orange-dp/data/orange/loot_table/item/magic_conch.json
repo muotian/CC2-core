@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 0,
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantments": {
+                  "levels": {
+                    "orange:hidden/strict_damage": 1
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:item_model": "orange:magic_conch",
+                "minecraft:rarity": "rare",
+                "minecraft:max_damage": 20,
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": "{orange:{id:\"magic_conch\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.magic_conch",
+                "fallback": "Magic Conch"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.magic_conch.desc",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "cooldown": {
+                  "mode": "item",
+                  "end_callback": {
+                    "type": "function",
+                    "value": "orange:magic_conch/reset"
+                  },
+                  "length": 60,
+                  "on_use": true,
+                  "start_callback": {
+                    "type": "function",
+                    "value": "orange:magic_conch/activate"
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "orange:magic_conch.default"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

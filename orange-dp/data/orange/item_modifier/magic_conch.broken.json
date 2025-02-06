@@ -1,0 +1,39 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:consumable": {},
+      "!food": {}
+    }
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "values": [
+        "broken"
+      ],
+      "mode": "replace_section",
+      "offset": 0,
+      "size": 1
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.orange.magic_conch.desc.broken",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 2,
+    "size": 1
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:saturation",
+                          "amplifier": 0,
+                          "duration": 10
+                        },
+                        {
+                          "id": "minecraft:nausea",
+                          "amplifier": 0,
+                          "duration": 140
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:rarity": "rare",
+                "minecraft:custom_data": "{orange:{id:\"enchanted_apple\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.enchanted_apple",
+                "fallback": "Enchanted Apple"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.enchanted_apple.desc",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

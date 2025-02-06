@@ -18,7 +18,6 @@
                 "minecraft:potion_contents": {
                   "custom_color": 13061821
                 },
-                "minecraft:rarity": "rare",
                 "minecraft:custom_data": "{orange:{id:\"gravity_cancelling_arrow\"}}"
               }
             },

@@ -2,15 +2,15 @@
   "enchant.time_releasing.hit": {
     "sounds": [
       {
-        "name": "mob/breeze/wind_burst1",
+        "name": "minecraft:mob/breeze/wind_burst1",
         "pitch": 2.4
       },
       {
-        "name": "mob/breeze/wind_burst2",
+        "name": "minecraft:mob/breeze/wind_burst2",
         "pitch": 2.4
       },
       {
-        "name": "mob/breeze/wind_burst3",
+        "name": "minecraft:mob/breeze/wind_burst3",
         "pitch": 2.4
       }
     ],
@@ -44,34 +44,42 @@
     ],
     "subtitle": "subtitles.orange.time_stablizing.hit"
   },
+  "item.magic_conch.use": {
+    "sounds": [
+      {
+        "name": "orange:magic_conch"
+      }
+    ],
+    "subtitle": "subtitles.orange.magic_conch.use"
+  },
   "item.timeless_lily_pad.throw": {
     "sounds": [
       {
-        "name": "entity/player/attack/sweep1",
+        "name": "minecraft:entity/player/attack/sweep1",
         "volume": 0.7
       },
       {
-        "name": "entity/player/attack/sweep2",
+        "name": "minecraft:entity/player/attack/sweep2",
         "volume": 0.7
       },
       {
-        "name": "entity/player/attack/sweep3",
+        "name": "minecraft:entity/player/attack/sweep3",
         "volume": 0.7
       },
       {
-        "name": "entity/player/attack/sweep4",
+        "name": "minecraft:entity/player/attack/sweep4",
         "volume": 0.7
       },
       {
-        "name": "entity/player/attack/sweep5",
+        "name": "minecraft:entity/player/attack/sweep5",
         "volume": 0.7
       },
       {
-        "name": "entity/player/attack/sweep6",
+        "name": "minecraft:entity/player/attack/sweep6",
         "volume": 0.7
       },
       {
-        "name": "entity/player/attack/sweep7",
+        "name": "minecraft:entity/player/attack/sweep7",
         "volume": 0.7
       }
     ],

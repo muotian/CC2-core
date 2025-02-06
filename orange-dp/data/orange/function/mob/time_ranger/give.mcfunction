@@ -1,1 +1,0 @@
-give @s minecraft:bow[minecraft:enchantments={"orange:mob/projectile_spawned_mainhand":1},minecraft:custom_data={orange:{mob:{projectile_spawned_mainhand:{command:"function orange:mob/time_ranger/shot_arrow"}}}}]

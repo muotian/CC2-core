@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 4.0,
+                    "id": "minecraft:armor.chestplate",
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "type": "minecraft:movement_speed",
+                    "amount": -0.04,
+                    "id": "orange:hard_leather_chestplate",
+                    "operation": "add_multiplied_base",
+                    "slot": "chest"
+                  }
+                ],
+                "minecraft:dyed_color": {
+                  "rgb": 9586478,
+                  "show_in_tooltip": false
+                },
+                "minecraft:max_damage": 120,
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_data": "{orange:{id:\"hard_leather_chestplate\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.hard_leather_chestplate",
+                "fallback": "Hard Leather Tunic"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.hard_leather_armor.desc",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

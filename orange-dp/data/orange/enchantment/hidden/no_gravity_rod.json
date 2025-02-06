@@ -1,0 +1,28 @@
+{
+  "anvil_cost": 64,
+  "description": "",
+  "effects": {
+    "minecraft:projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "orange:no_gravity_rod/thrown"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": [],
+  "weight": 1
+}
