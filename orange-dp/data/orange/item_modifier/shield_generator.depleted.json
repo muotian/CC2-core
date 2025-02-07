@@ -1,0 +1,46 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "orange:hidden/shield_generator": 0
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "orange": {
+        "mode": "depleted"
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "mode": "replace_section",
+      "offset": 0,
+      "size": 1,
+      "values": [
+        "depleted"
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.orange.shield_generator.desc.depleted",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 3,
+    "size": 1
+  },
+  {
+    "function": "minecraft:set_damage",
+    "add": true,
+    "damage": -0.021
+  }
+]

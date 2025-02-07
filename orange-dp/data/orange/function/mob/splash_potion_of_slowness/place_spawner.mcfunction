@@ -1,0 +1,2 @@
+execute align xyz run summon minecraft:marker ~0.5 ~0.5 ~0.5 {Tags:["orange.spawner"]}
+setblock ~ ~ ~ minecraft:spawner{Delay:0s,MaxNearbyEntities:32767s,MaxSpawnDelay:80s,MinSpawnDelay:40s,RequiredPlayerRange:24s,SpawnCount:1s,SpawnPotentials:[{data:{custom_spawn_rules:{block_light_limit:{max_inclusive:15,min_inclusive:0}},entity:{id:"minecraft:potion",Item:{id:"minecraft:splash_potion",components:{"minecraft:potion_contents":{potion:"minecraft:slowness"}},count:1}}},weight:1}],SpawnRange:3s}

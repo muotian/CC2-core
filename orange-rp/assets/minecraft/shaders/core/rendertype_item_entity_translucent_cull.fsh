@@ -30,7 +30,7 @@ void main() {
         color.rgb = vec3(0.0);
         color.a = 127.0 / 255.0;
     }
-    else if (fColor == ivec4(128, 128, 128, 250)) {
+    else if (fColor == ivec4(127, 127, 127, 250) || fColor == ivec4(128, 128, 128, 250)) {
         color.a = 0.0;
     }
     fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);

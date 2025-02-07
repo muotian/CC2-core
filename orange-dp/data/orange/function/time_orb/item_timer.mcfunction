@@ -1,3 +1,4 @@
+execute unless score @s orange.time_orb matches 0.. run data modify entity @s Glowing set value 1b
 execute unless score @s orange.time_orb matches 0.. run scoreboard players set @s orange.time_orb 200
 execute if score @s orange.time_orb matches 180.. rotated ~36 0 run particle minecraft:dust{color:[0.6666667, 0.5, 0.75],scale:0.5} ^ ^ ^0.5 0.0 0.0 0.0 10000000000000 0 normal
 execute if score @s orange.time_orb matches 160.. rotated ~72 0 run particle minecraft:dust{color:[0.6666667, 0.5, 0.75],scale:0.5} ^ ^ ^0.5 0.0 0.0 0.0 10000000000000 0 normal

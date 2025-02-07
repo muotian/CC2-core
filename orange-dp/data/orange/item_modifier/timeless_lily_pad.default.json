@@ -40,12 +40,12 @@
   {
     "function": "minecraft:set_custom_model_data",
     "strings": {
-      "values": [
-        "default"
-      ],
       "mode": "replace_section",
       "offset": 0,
-      "size": 1
+      "size": 1,
+      "values": [
+        "default"
+      ]
     }
   }
 ]

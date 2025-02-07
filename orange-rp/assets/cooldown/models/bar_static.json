@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cooldown:bar_back",
+    "layer1": "cooldown:bar_color"
+  }
+}

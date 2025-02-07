@@ -19,6 +19,10 @@
     {
       "type": "single",
       "resource": "cooldown:bar_cover"
+    },
+    {
+      "type": "single",
+      "resource": "cooldown:bar_cover_rev"
     }
   ]
 }

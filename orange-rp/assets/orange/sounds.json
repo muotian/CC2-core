@@ -52,6 +52,81 @@
     ],
     "subtitle": "subtitles.orange.magic_conch.use"
   },
+  "item.mysterious_ore.radiate": {
+    "sounds": [
+      {
+        "name": "minecraft:block/amethyst/step1",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step2",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step3",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step4",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step5",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step6",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step7",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step8",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step9",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step10",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step11",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step12",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step13",
+        "volume": 0.5
+      },
+      {
+        "name": "minecraft:block/amethyst/step14",
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "subtitles.orange.mysterious_ore.radiate"
+  },
+  "item.shield_generator.break": {
+    "sounds": [
+      {
+        "name": "minecraft:random/glass1"
+      },
+      {
+        "name": "minecraft:random/glass2"
+      },
+      {
+        "name": "minecraft:random/glass3"
+      }
+    ],
+    "subtitle": "subtitles.orange.shield_generator.break"
+  },
   "item.timeless_lily_pad.throw": {
     "sounds": [
       {

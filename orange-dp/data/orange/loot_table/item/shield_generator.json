@@ -5,32 +5,33 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
                 "minecraft:bundle_contents": [],
                 "minecraft:damage": 0,
-                "minecraft:enchantment_glint_override": false,
+                "minecraft:enchantment_glint_override": true,
                 "minecraft:enchantments": {
                   "levels": {
                     "orange:hidden/strict_damage": 1
                   },
                   "show_in_tooltip": false
                 },
-                "minecraft:item_model": "orange:magic_conch",
+                "minecraft:item_model": "orange:shield_generator",
                 "minecraft:rarity": "rare",
-                "minecraft:max_damage": 20,
+                "minecraft:max_damage": 100,
                 "minecraft:max_stack_size": 1,
-                "minecraft:custom_data": "{orange:{id:\"magic_conch\"}}"
+                "minecraft:custom_data": "{orange:{id:\"shield_generator\"}}"
               }
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "item.orange.magic_conch",
-                "fallback": "Magic Conch"
+                "translate": "item.orange.shield_generator",
+                "fallback": "Shield Generator"
               },
               "target": "item_name"
             },
@@ -39,7 +40,12 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.magic_conch.desc",
+                  "translate": "item.orange.shield_generator.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.shield_generator.desc.1",
                   "color": "white",
                   "italic": false
                 }
@@ -50,25 +56,21 @@
               "function": "minecraft:set_custom_data",
               "tag": {
                 "cooldown": {
-                  "mode": "item",
                   "end_callback": {
-                    "type": "function",
-                    "value": "orange:magic_conch/reset"
+                    "type": "item_modifier",
+                    "value": "orange:shield_generator.charged"
                   },
-                  "length": 60,
-                  "on_use": true,
-                  "start_callback": {
-                    "type": "function",
-                    "value": "orange:magic_conch/activate"
-                  }
+                  "length": 10,
+                  "mode": "item"
                 }
               }
             },
             {
               "function": "minecraft:reference",
-              "name": "orange:magic_conch.default"
+              "name": "orange:shield_generator.charged"
             }
-          ]
+          ],
+          "name": "minecraft:poisonous_potato"
         }
       ],
       "rolls": 1

@@ -1,0 +1,23 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "slots": {
+        "contents": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "orange": {
+                "id": "mysterious_ore"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:random_chance",
+    "chance": 0.02
+  }
+]

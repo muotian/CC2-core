@@ -1,0 +1,89 @@
+{
+  "anvil_cost": 64,
+  "description": "",
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 20
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "is_direct": true,
+              "tags": [
+                {
+                  "expected": true,
+                  "id": "orange:is_melee_attack"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:play_sound",
+              "pitch": 1.0,
+              "sound": {
+                "sound_id": "orange:item.shield_generator.break"
+              },
+              "volume": 1.0
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "orange:shield_generator/used"
+            }
+          ]
+        },
+        "enchanted": "victim"
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "horizontal_position": {
+            "type": "in_bounding_box"
+          },
+          "horizontal_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          },
+          "particle": {
+            "type": "minecraft:enchant"
+          },
+          "vertical_position": {
+            "type": "in_bounding_box"
+          },
+          "vertical_velocity": {
+            "base": 0,
+            "movement_scale": 0
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 64,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": [],
+  "weight": 1
+}

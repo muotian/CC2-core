@@ -1,4 +1,5 @@
 scoreboard players reset @s orange.time_stealing.level
+scoreboard players reset @s orange.time_stealing.level_rev
 scoreboard players reset @s orange.time_stealing.duration
 attribute @s minecraft:attack_speed modifier remove orange:time_stealing
 attribute @s minecraft:movement_speed modifier remove orange:time_stealing

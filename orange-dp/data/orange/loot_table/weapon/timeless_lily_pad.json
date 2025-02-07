@@ -10,8 +10,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "!minecraft:food": {},
                 "!minecraft:consumable": {},
+                "!minecraft:food": {},
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:enchantments": {
                   "orange:time_stealing": 1,

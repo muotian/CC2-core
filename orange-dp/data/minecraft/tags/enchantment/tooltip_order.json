@@ -1,5 +1,7 @@
 {
   "values": [
+    "orange:edge_protection",
+    "orange:desc/edge_protection",
     "orange:time_impulse",
     "orange:desc/time_impulse",
     "orange:time_punishment",

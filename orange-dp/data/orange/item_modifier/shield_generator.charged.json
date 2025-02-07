@@ -1,14 +1,16 @@
 [
   {
-    "function": "minecraft:set_attributes",
-    "modifiers": [],
-    "replace": true
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "orange:hidden/shield_generator": 1
+    }
   },
   {
-    "function": "minecraft:set_components",
-    "components": {
-      "!minecraft:consumable": {},
-      "!food": {}
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "orange": {
+        "mode": "charged"
+      }
     }
   },
   {
@@ -18,7 +20,7 @@
       "offset": 0,
       "size": 1,
       "values": [
-        "broken"
+        "charged"
       ]
     }
   },
@@ -27,13 +29,13 @@
     "entity": "this",
     "lore": [
       {
-        "translate": "item.orange.magic_conch.desc.broken",
+        "translate": "item.orange.shield_generator.desc.charged",
         "color": "gray",
         "italic": false
       }
     ],
     "mode": "replace_section",
-    "offset": 2,
+    "offset": 3,
     "size": 1
   }
 ]

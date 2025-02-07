@@ -66,6 +66,14 @@ void main() {
                 mPosition.x -= 1;
             }
         }
+        else if (vColor.rgb == ivec3(127, 127, 127)) {
+            if (gl_VertexID % 4 == 0 || gl_VertexID % 4 == 1) {
+                mPosition.x += int((1 - (target - current) / duration) * 13 + 2);
+            }
+            else {
+                mPosition.x -= 1;
+            }
+        }
     }
     
     // vanilla behavior

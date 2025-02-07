@@ -41,6 +41,7 @@ scoreboard objectives add orange.mob.muf_tick_offhand dummy
 scoreboard objectives add orange.misc.has_been_shot dummy
 
 scoreboard players set #-1 number -1
+scoreboard players set #5 number 5
 scoreboard players set #3 number 3
 scoreboard players set #20 number 20
 scoreboard players set #24000 number 24000

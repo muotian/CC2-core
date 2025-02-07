@@ -28,6 +28,7 @@ execute as @e[type=minecraft:arrow,tag=orange.gravity_cancelling_arrow] at @s ru
 execute as @e[type=minecraft:arrow,tag=orange.time_releasing_arrow] at @s run function orange:time_releasing/arrow_particle
 execute as @e[type=minecraft:arrow,tag=orange.time_stealing_arrow] at @s run function orange:time_stealing/arrow_particle
 
+execute as @e[type=minecraft:item,predicate=orange:is_dropped_mysterious_ore] at @s run function orange:mysterious_ore/radiate
 execute as @e[type=minecraft:item,predicate=orange:is_dropped_time_orb] at @s positioned ~ ~0.25 ~ facing entity @p feet run function orange:time_orb/item_timer
 
 execute as @a[scores={orange.dead=1..}] run function orange:player_dead
