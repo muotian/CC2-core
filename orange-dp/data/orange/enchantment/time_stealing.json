@@ -7,6 +7,40 @@
   "effects": {
     "minecraft:post_attack": [
       {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "orange:time_stealing/negation_victim"
+        },
+        "enchanted": "attacker",
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#orange:possesses_time"
+            }
+          }
+        ]
+      },
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "orange:time_stealing/negation_attacker"
+        },
+        "enchanted": "attacker",
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#orange:possesses_time"
+            }
+          }
+        ]
+      },
+      {
         "affected": "attacker",
         "effect": {
           "type": "minecraft:all_of",
@@ -50,91 +84,17 @@
               "condition": "minecraft:any_of",
               "terms": [
                 {
-                  "condition": "minecraft:entity_properties",
+                  "condition": "minecraft:entity_scores",
                   "entity": "this",
-                  "predicate": {
-                    "equipment": {
-                      "head": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "chest": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "legs": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "feet": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      }
-                    }
+                  "scores": {
+                    "orange.time_stealing.negation": 1
                   }
                 },
                 {
-                  "condition": "minecraft:entity_properties",
+                  "condition": "minecraft:entity_scores",
                   "entity": "attacker",
-                  "predicate": {
-                    "equipment": {
-                      "head": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "chest": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "legs": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "feet": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      }
-                    }
+                  "scores": {
+                    "orange.time_stealing.negation": 1
                   }
                 }
               ]
@@ -183,7 +143,7 @@
         "requirements": [
           {
             "condition": "minecraft:entity_properties",
-            "entity": "this",
+            "entity": "attacker",
             "predicate": {
               "type": "#orange:possesses_time"
             }
@@ -194,91 +154,17 @@
               "condition": "minecraft:any_of",
               "terms": [
                 {
-                  "condition": "minecraft:entity_properties",
+                  "condition": "minecraft:entity_scores",
                   "entity": "this",
-                  "predicate": {
-                    "equipment": {
-                      "head": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "chest": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "legs": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "feet": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      }
-                    }
+                  "scores": {
+                    "orange.time_stealing.negation": 1
                   }
                 },
                 {
-                  "condition": "minecraft:entity_properties",
+                  "condition": "minecraft:entity_scores",
                   "entity": "attacker",
-                  "predicate": {
-                    "equipment": {
-                      "head": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "chest": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "legs": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      },
-                      "feet": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "orange:time_stablizing"
-                            }
-                          ]
-                        }
-                      }
-                    }
+                  "scores": {
+                    "orange.time_stealing.negation": 1
                   }
                 }
               ]

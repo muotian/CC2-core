@@ -1,0 +1,24 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "orange:time_protection": 2,
+                  "orange:desc/time_protection": 1
+                }
+              }
+            }
+          ] 
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

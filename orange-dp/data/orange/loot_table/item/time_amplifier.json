@@ -10,32 +10,32 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
                 "minecraft:bundle_contents": [
                   {
                     "id": "minecraft:snowball",
                     "count": 3
                   }
                 ],
-                "minecraft:damage": 0,
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:enchantments": {
                   "levels": {
-                    "orange:hidden/strict_damage": 1
+                    "orange:hidden/time_amplifier": 1
                   },
                   "show_in_tooltip": false
                 },
-                "minecraft:item_model": "orange:magic_conch",
-                "minecraft:rarity": "rare",
-                "minecraft:max_damage": 20,
+                "minecraft:item_model": "minecraft:quartz",
+                "minecraft:rarity": "epic",
                 "minecraft:max_stack_size": 1,
-                "minecraft:custom_data": "{orange:{id:\"magic_conch\"}}"
+                "minecraft:custom_data": "{orange:{id:\"time_amplifier\"}}"
               }
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "item.orange.magic_conch",
-                "fallback": "Magic Conch"
+                "translate": "item.orange.time_amplifier",
+                "fallback": "Time Catalyst"
               },
               "target": "item_name"
             },
@@ -44,34 +44,17 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.magic_conch.desc",
+                  "translate": "item.orange.time_amplifier.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.time_amplifier.desc.1",
                   "color": "white",
                   "italic": false
                 }
               ],
               "mode": "replace_all"
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": {
-                "cooldown": {
-                  "mode": "item",
-                  "end_callback": {
-                    "type": "function",
-                    "value": "orange:magic_conch/reset"
-                  },
-                  "length": 60,
-                  "on_use": true,
-                  "start_callback": {
-                    "type": "function",
-                    "value": "orange:magic_conch/activate"
-                  }
-                }
-              }
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "orange:magic_conch.default"
             }
           ]
         }

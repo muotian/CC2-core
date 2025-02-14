@@ -1,5 +1,6 @@
 {
   "values": [
-    "#minecraft:exclusive_set/armor"
+    "#minecraft:exclusive_set/armor",
+    "orange:desc/time_protection"
   ]
 }

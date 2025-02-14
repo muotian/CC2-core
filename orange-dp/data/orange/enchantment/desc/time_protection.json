@@ -1,0 +1,23 @@
+{
+  "anvil_cost": 0,
+  "description": {
+    "translate": "enchantment_desc.orange.time_protection",
+    "color": "#7F7F7F",
+    "italic": true
+  },
+  "exclusive_set": "#orange:exclusive_set/desc/time_protection",
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 1
+}

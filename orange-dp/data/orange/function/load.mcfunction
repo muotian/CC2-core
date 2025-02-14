@@ -18,7 +18,9 @@ scoreboard objectives add orange.gravity_cancelling.duration dummy
 scoreboard objectives add orange.time_stealing.duration dummy
 scoreboard objectives add orange.time_stealing.level dummy
 scoreboard objectives add orange.time_stealing.level_rev dummy
+scoreboard objectives add orange.time_stealing.level_add dummy
 scoreboard objectives add orange.time_stealing.time dummy
+scoreboard objectives add orange.time_stealing.negation dummy
 
 scoreboard objectives add orange.time_stablizing.damage dummy
 

@@ -5,11 +5,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
                 "minecraft:bundle_contents": [
                   {
                     "id": "minecraft:snowball",
@@ -17,25 +18,24 @@
                   }
                 ],
                 "minecraft:damage": 0,
-                "minecraft:enchantment_glint_override": false,
                 "minecraft:enchantments": {
                   "levels": {
                     "orange:hidden/strict_damage": 1
                   },
                   "show_in_tooltip": false
                 },
-                "minecraft:item_model": "orange:magic_conch",
+                "minecraft:item_model": "orange:energy_relay",
                 "minecraft:rarity": "rare",
-                "minecraft:max_damage": 20,
+                "minecraft:max_damage": 100,
                 "minecraft:max_stack_size": 1,
-                "minecraft:custom_data": "{orange:{id:\"magic_conch\"}}"
+                "minecraft:custom_data": "{orange:{id:\"energy_relay\"}}"
               }
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "item.orange.magic_conch",
-                "fallback": "Magic Conch"
+                "translate": "item.orange.energy_relay",
+                "fallback": "Energy Relay"
               },
               "target": "item_name"
             },
@@ -44,7 +44,12 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.magic_conch.desc",
+                  "translate": "item.orange.energy_relay.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.energy_relay.desc.1",
                   "color": "white",
                   "italic": false
                 }
@@ -55,25 +60,21 @@
               "function": "minecraft:set_custom_data",
               "tag": {
                 "cooldown": {
-                  "mode": "item",
                   "end_callback": {
-                    "type": "function",
-                    "value": "orange:magic_conch/reset"
+                    "type": "item_modifier",
+                    "value": "orange:energy_relay.charged"
                   },
-                  "length": 60,
-                  "on_use": true,
-                  "start_callback": {
-                    "type": "function",
-                    "value": "orange:magic_conch/activate"
-                  }
+                  "length": 10,
+                  "mode": "item"
                 }
               }
             },
             {
               "function": "minecraft:reference",
-              "name": "orange:magic_conch.default"
+              "name": "orange:energy_relay.charged"
             }
-          ]
+          ],
+          "name": "minecraft:poisonous_potato"
         }
       ],
       "rolls": 1

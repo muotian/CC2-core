@@ -1,0 +1,23 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "slots": {
+        "weapon.*": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "orange": {
+                "id": "time_interferometer"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:random_chance",
+    "chance": 0.2
+  }
+]

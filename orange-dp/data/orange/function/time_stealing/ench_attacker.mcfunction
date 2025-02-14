@@ -1,5 +1,10 @@
 execute store result score $time_stealing orange.temp run data get entity @s active_effects[{id:"minecraft:luck"}].amplifier
 execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{effects:{"minecraft:luck":{duration:1}}}} run effect clear @s minecraft:luck
+
+scoreboard players set @s orange.time_stealing.level_add 0
+execute if predicate orange:activates_time_catalyst run scoreboard players add @s orange.time_stealing.level_add 1
+scoreboard players operation $time_stealing orange.temp += @s orange.time_stealing.level_add
+
 scoreboard players operation $time_stealing_2 orange.temp = $time_stealing orange.temp
 scoreboard players operation $time_stealing_2 orange.temp += $time_stealing orange.temp
 execute unless score @s orange.time_stealing.level matches ..-1 run scoreboard players operation @s orange.time_stealing.level += $time_stealing orange.temp

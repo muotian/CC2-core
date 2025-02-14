@@ -2,7 +2,7 @@
   "anvil_cost": 4,
   "description": {
     "translate": "enchantment.orange.edge_protection",
-    "fallback": "Edge Protection"
+    "fallback": "Protection of Edged Weapons"
   },
   "effects": {
     "minecraft:damage_protection": [

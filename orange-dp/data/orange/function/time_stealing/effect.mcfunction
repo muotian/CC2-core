@@ -49,4 +49,5 @@ execute if score @s orange.time_stealing.level matches 5 run attribute @s minecr
 execute if score @s orange.time_stealing.level matches 5 run attribute @s minecraft:block_break_speed modifier add orange:time_stealing 0.20 add_multiplied_total
 execute if score @s orange.time_stealing.level matches 5 run attribute @s minecraft:movement_speed modifier add orange:time_stealing 0.30 add_multiplied_total
 
+execute if items entity @s weapon.* minecraft:poisonous_potato[minecraft:custom_data~{orange:{id:"time_amplifier"}}] run function orange:time_amplifier/update
 execute as @s[type=minecraft:player] run function orange:time_stealing/actionbar_set

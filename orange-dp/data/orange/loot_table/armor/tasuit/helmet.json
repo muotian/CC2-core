@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 1.0,
+                    "id": "minecraft:armor.helmet",
+                    "operation": "add_value",
+                    "slot": "head"
+                  }
+                ],
+                "minecraft:dyed_color": {
+                  "rgb": 10329495,
+                  "show_in_tooltip": false
+                },
+                "minecraft:enchantments": {
+                  "orange:time_protection": 1,
+                  "orange:desc/time_protection": 1
+                },
+                "minecraft:max_damage": 165,
+                "minecraft:rarity": "rare",
+                "minecraft:trim": {
+                  "material": "minecraft:quartz",
+                  "pattern": "minecraft:rib",
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_data": "{orange:{id:\"tasuit_helmet\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.tasuit_helmet",
+                "fallback": "T. A. Suit Helmet"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.tasuit.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.tasuit.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

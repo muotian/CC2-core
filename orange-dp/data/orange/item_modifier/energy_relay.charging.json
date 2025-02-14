@@ -2,13 +2,9 @@
   {
     "function": "minecraft:set_components",
     "components": {
+      "!minecraft:consumable": {},
+      "!minecraft:food": {},
       "minecraft:enchantment_glint_override": false
-    }
-  },
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "orange:hidden/shield_generator": 0
     }
   },
   {

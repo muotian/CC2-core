@@ -1,0 +1,96 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "minecraft:item/heart_of_the_sea"
+            },
+            {
+              "type": "minecraft:select",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "cooldown:bar_static",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": 16777045
+                      }
+                    ]
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:empty"
+              },
+              "property": "minecraft:display_context"
+            }
+          ]
+        },
+        "when": "charged"
+      },
+      {
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "minecraft:item/heart_of_the_sea"
+            },
+            {
+              "type": "minecraft:select",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "cooldown:bar_rev",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 1,
+                        "default": 16777045
+                      },
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 0,
+                        "default": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:empty"
+              },
+              "property": "minecraft:display_context"
+            }
+          ]
+        },
+        "when": "charging"
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/heart_of_the_sea"
+    },
+    "index": 0,
+    "property": "minecraft:custom_model_data"
+  }
+}

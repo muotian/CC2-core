@@ -68,7 +68,16 @@
             "base": 0,
             "movement_scale": 0
           }
-        }
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "periodic_tick": 2
+            }
+          }
+        ]
       }
     ]
   },

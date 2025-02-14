@@ -3,6 +3,10 @@ execute as @s[type=!#orange:possesses_time] run return fail
 execute at @s run playsound orange:enchant.time_stealing.hit player @a ~ ~ ~
 scoreboard players set $time_stealing orange.temp 1
 execute if score $time_stealing.cmd_attacker orange.arg matches 1.. run scoreboard players operation $time_stealing orange.temp = $time_stealing.cmd_attacker orange.arg
+
+scoreboard players operation $time_stealing orange.temp += $time_stealing_add orange.temp
+scoreboard players reset $time_stealing_add orange.temp
+
 scoreboard players operation $time_stealing_2 orange.temp = $time_stealing orange.temp
 scoreboard players operation $time_stealing_2 orange.temp += $time_stealing orange.temp
 execute unless score @s orange.time_stealing.level matches ..-1 run scoreboard players operation @s orange.time_stealing.level += $time_stealing orange.temp

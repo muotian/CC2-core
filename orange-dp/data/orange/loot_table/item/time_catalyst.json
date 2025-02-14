@@ -5,6 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -17,23 +18,17 @@
                     "count": 3
                   }
                 ],
-                "minecraft:enchantment_glint_override": false,
-                "minecraft:enchantments": {
-                  "levels": {
-                    "orange:hidden/mysterious_ore": 1
-                  },
-                  "show_in_tooltip": false
-                },
-                "minecraft:item_model": "minecraft:raw_copper",
-                "minecraft:rarity": "rare",
-                "minecraft:custom_data": "{orange:{id:\"mysterious_ore\"}}"
+                "minecraft:item_model": "minecraft:echo_shard",
+                "minecraft:rarity": "epic",
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": "{orange:{id:\"time_catalyst\"}}"
               }
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "item.orange.mysterious_ore",
-                "fallback": "Mysterious Ore"
+                "translate": "item.orange.time_catalyst",
+                "fallback": "Time Catalyst"
               },
               "target": "item_name"
             },
@@ -42,25 +37,19 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.mysterious_ore.desc.0",
+                  "translate": "item.orange.time_catalyst.desc.0",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "translate": "item.orange.mysterious_ore.desc.1",
-                  "color": "white",
-                  "italic": false
-                },
-                {
-                  "translate": "item.orange.mysterious_ore.desc.2",
+                  "translate": "item.orange.time_catalyst.desc.1",
                   "color": "white",
                   "italic": false
                 }
               ],
               "mode": "replace_all"
             }
-          ],
-          "name": "minecraft:poisonous_potato"
+          ]
         }
       ],
       "rolls": 1

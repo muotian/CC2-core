@@ -8,8 +8,22 @@
           "name": "minecraft:poisonous_potato",
           "functions": [
             {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "id": "orange:plate_scrap",
+                  "operation": "add_value",
+                  "slot": "hand"
+                }
+              ]
+            },
+            {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
                 "minecraft:bundle_contents": [
                   {
                     "id": "minecraft:snowball",
@@ -20,22 +34,22 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:enchantments": {
                   "levels": {
-                    "orange:hidden/strict_damage": 1
+                    "orange:hidden/damage_post_attack": 1
                   },
                   "show_in_tooltip": false
                 },
-                "minecraft:item_model": "orange:magic_conch",
+                "minecraft:item_model": "minecraft:armadillo_scute",
                 "minecraft:rarity": "rare",
-                "minecraft:max_damage": 20,
+                "minecraft:max_damage": 121,
                 "minecraft:max_stack_size": 1,
-                "minecraft:custom_data": "{orange:{id:\"magic_conch\"}}"
+                "minecraft:custom_data": "{orange:{id:\"plate_scrap\"}}"
               }
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "item.orange.magic_conch",
-                "fallback": "Magic Conch"
+                "translate": "item.orange.plate_scrap",
+                "fallback": "Plate Scrap"
               },
               "target": "item_name"
             },
@@ -44,34 +58,12 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.magic_conch.desc",
+                  "translate": "item.orange.plate_scrap.desc",
                   "color": "white",
                   "italic": false
                 }
               ],
               "mode": "replace_all"
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": {
-                "cooldown": {
-                  "mode": "item",
-                  "end_callback": {
-                    "type": "function",
-                    "value": "orange:magic_conch/reset"
-                  },
-                  "length": 60,
-                  "on_use": true,
-                  "start_callback": {
-                    "type": "function",
-                    "value": "orange:magic_conch/activate"
-                  }
-                }
-              }
-            },
-            {
-              "function": "minecraft:reference",
-              "name": "orange:magic_conch.default"
             }
           ]
         }

@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:copy_custom_data",
+  "ops": [
+    {
+      "op": "replace",
+      "source": "root.time",
+      "target": "orange.dummy"
+    }
+  ],
+  "source": {
+    "type": "minecraft:storage",
+    "source": "orange:macro"
+  }
+}

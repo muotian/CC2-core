@@ -4,6 +4,8 @@
     "orange:desc/edge_protection",
     "orange:time_impulse",
     "orange:desc/time_impulse",
+    "orange:time_protection",
+    "orange:desc/time_protection",
     "orange:time_punishment",
     "orange:desc/time_punishment",
     "orange:time_releasing",

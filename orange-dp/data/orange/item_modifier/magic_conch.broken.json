@@ -8,7 +8,7 @@
     "function": "minecraft:set_components",
     "components": {
       "!minecraft:consumable": {},
-      "!food": {}
+      "!minecraft:food": {}
     }
   },
   {
