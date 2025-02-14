@@ -1,0 +1,21 @@
+{
+    "values": [
+      "#minecraft:boat",
+      "area_effect_cloud",
+      "marker",
+      "villager",
+      "armor_stand",
+      "#arrows",
+      "minecart",
+      "tnt",
+      "tnt_minecart",
+      "command_block_minecart",
+      "spawner_minecart",
+      "item",
+      "item_display",
+      "item_frame",
+      "block_display",
+      "text_display"
+
+    ]
+  }
