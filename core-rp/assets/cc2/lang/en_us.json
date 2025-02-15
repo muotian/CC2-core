@@ -1,6 +1,7 @@
 {
   "item_desc.cc2.objective": "Objective",
   "text.cc2.health": "HP",
+  "text.cc2.resource_pack_desc": "Cartocraft 2 Resources",
   "text.cc2.resource_pack_test": "Resource pack is installed.",
   "tool_tier.cc2.wood": "Tool tier: Wood",
   "tool_tier.cc2.gold": "Tool tier: Gold",
