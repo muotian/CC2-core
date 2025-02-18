@@ -12,6 +12,8 @@ execute as @e[scores={orange.gravity_cancelling.duration=1}] run function orange
 scoreboard players remove @e[scores={orange.gravity_cancelling.duration=1..}] orange.gravity_cancelling.duration 1
 scoreboard players reset @e[scores={orange.gravity_cancelling.duration=0}] orange.gravity_cancelling.duration
 
+execute as @e[type=minecraft:item_display,tag=orange.mob.time_cube.display] run function orange:mob/time_cube/display
+
 execute as @a[scores={orange.timeless_lily_pad.charge_time=1..},advancements={orange:timeless_lily_pad.charging=false}] run function orange:timeless_lily_pad/released
 scoreboard players reset @a[scores={orange.timeless_lily_pad.charge_time=1..},advancements={orange:timeless_lily_pad.charging=false}] orange.timeless_lily_pad.charge_time
 advancement revoke @a[advancements={orange:timeless_lily_pad.charging=true}] only orange:timeless_lily_pad.charging
@@ -32,3 +34,5 @@ execute as @e[type=minecraft:item,predicate=orange:is_dropped_mysterious_ore] at
 execute as @e[type=minecraft:item,predicate=orange:is_dropped_time_orb] at @s positioned ~ ~0.25 ~ facing entity @p feet run function orange:time_orb/item_timer
 
 execute as @a[scores={orange.dead=1..}] run function orange:player_dead
+
+scoreboard players remove @a[scores={orange.teleporter.cooldown=1..}] orange.teleporter.cooldown 1

@@ -1,0 +1,44 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "animation": "none",
+        "consume_seconds": 1e16,
+        "has_consume_particles": false
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "orange": {
+        "mode": "default"
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "mode": "replace_section",
+      "offset": 0,
+      "size": 1,
+      "values": [
+        "default"
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "item_desc.orange.has_cooldown.default",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 3,
+    "size": 1
+  }
+]

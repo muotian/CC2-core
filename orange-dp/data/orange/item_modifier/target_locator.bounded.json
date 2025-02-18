@@ -1,0 +1,23 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "item.orange.target_locator.desc.1",
+        "color": "white",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 2,
+    "size": 1
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "orange": {
+        "mode": "bounded"
+      }
+    }
+  }
+]

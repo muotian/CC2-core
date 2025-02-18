@@ -32,6 +32,13 @@
                       "id": "orange:mob_adjustment",
                       "operation": "add_value",
                       "slot": "head"
+                    },
+                    {
+                      "type": "minecraft:movement_speed",
+                      "amount": -0.3,
+                      "id": "orange:mob_adjustment",
+                      "operation": "add_multiplied_base",
+                      "slot": "head"
                     }
                   ]
                 },

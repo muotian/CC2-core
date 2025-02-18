@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 2.0,
+                    "id": "minecraft:armor.leggings",
+                    "operation": "add_value",
+                    "slot": "legs"
+                  }
+                ],
+                "minecraft:dyed_color": {
+                  "rgb": 3290681,
+                  "show_in_tooltip": false
+                },
+                "minecraft:enchantments": {
+                  "minecraft:unbreaking": 1,
+                  "orange:edge_protection": 1,
+                  "orange:desc/edge_protection": 1
+                },
+                "minecraft:max_damage": 225,
+                "minecraft:rarity": "rare",
+                "minecraft:trim": {
+                  "material": "minecraft:netherite",
+                  "pattern": "minecraft:eye",
+                  "show_in_tooltip": false
+                },
+                "minecraft:custom_data": "{orange:{id:\"edge_proof_leggings\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.edge_proof_leggings",
+                "fallback": "Edge Proof Pants"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.edge_proof_armor.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.edge_proof_armor.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

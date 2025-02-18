@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.8,
+                  "id": "orange:mob_adjustment",
+                  "operation": "add_value",
+                  "slot": "head"
+                },
+                {
+                  "attribute": "minecraft:max_health",
+                  "amount": -5.0,
+                  "id": "orange:mob_adjustment",
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ],
+              "replace": false
+            }
+          ],
+          "value": "orange:armor/timesuit/helmet"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/timesuit/chestplate"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/timesuit/leggings"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:armor/timesuit/boots"
+        }
+      ]
+    }
+  ]
+}

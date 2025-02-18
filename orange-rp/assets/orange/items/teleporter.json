@@ -1,0 +1,48 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "minecraft:item/ender_eye"
+            },
+            {
+              "type": "minecraft:select",
+              "cases": [
+                {
+                  "when": "gui",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "cooldown:overlay",
+                    "tints": [
+                      {
+                        "type": "minecraft:custom_model_data",
+                        "index": 0,
+                        "default": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:empty"
+              },
+              "property": "minecraft:display_context"
+            }
+          ]
+        },
+        "when": "cooldown"
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/ender_eye"
+    },
+    "index": 0,
+    "property": "minecraft:custom_model_data"
+  }
+}

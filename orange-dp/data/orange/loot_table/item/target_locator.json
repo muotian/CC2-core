@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lodestone_tracker": {
+                  "tracked": false
+                },
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_data": "{orange:{id:\"target_locator\",mode:\"unbounded\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.target_locator",
+                "fallback": "Target Locator",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.target_locator.desc.0",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ],
+          "name": "minecraft:compass"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

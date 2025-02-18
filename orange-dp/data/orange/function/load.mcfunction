@@ -31,6 +31,8 @@ scoreboard objectives add orange.timeless_lily_pad.add_damage dummy
 
 scoreboard objectives add orange.time_orb dummy
 
+scoreboard objectives add orange.teleporter.cooldown dummy
+
 scoreboard objectives add orange.mob.muf_killed dummy
 scoreboard objectives add orange.mob.muf_falling dummy
 scoreboard objectives add orange.mob.muf_on_ground dummy
@@ -40,7 +42,10 @@ scoreboard objectives add orange.mob.muf_targeting_moved dummy
 scoreboard objectives add orange.mob.muf_tick_mainhand dummy
 scoreboard objectives add orange.mob.muf_tick_offhand dummy
 
+scoreboard objectives add orange.mob.time_mutant.state dummy
+
 scoreboard objectives add orange.misc.has_been_shot dummy
+scoreboard objectives add orange.npc_state dummy
 
 scoreboard objectives add orange.flame_of_finality.effect dummy
 scoreboard objectives add orange.flame_of_finality.effect.timer dummy

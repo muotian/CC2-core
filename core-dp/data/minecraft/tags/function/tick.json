@@ -1,6 +1,7 @@
 {
   "values": [
     "cc2.internal:first_tick",
+    "endsky_npc:tick",
     "cooldown:_system/tick",
     "orange:tick",
     "cc2.internal:last_tick"

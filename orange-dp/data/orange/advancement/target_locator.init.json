@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "let_me_see_see": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:compass",
+            "predicates": {
+              "minecraft:custom_data": {
+                "orange": {
+                  "id": "target_locator",
+                  "mode": "unbounded"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "orange:target_locator/init"
+  }
+}

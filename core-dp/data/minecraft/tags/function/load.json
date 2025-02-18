@@ -1,6 +1,7 @@
 {
   "values": [
     "cc2.internal:load",
+    "endsky_npc:load",
     "cooldown:_system/load",
     "orange:load"
   ]
