@@ -9,7 +9,7 @@ scoreboard objectives add cc2.actionbar_active dummy "Player actionbar state"
 
 # Player tracker / storage manager
 scoreboard objectives add cc2.score_id dummy
-execute unless score #new_score_id cc2 matches 0.. run scoreboard players set #new_score_id cc2 1
+execute unless score #new_score_id cc2 matches 1.. run scoreboard players set #new_score_id cc2 1
 execute unless score #loaded_player_storage cc2 matches 0.. run scoreboard players set #loaded_player_storage cc2 0
 execute unless score #loaded_player_nbt cc2 matches 0.. run scoreboard players set #loaded_player_nbt cc2 0
 

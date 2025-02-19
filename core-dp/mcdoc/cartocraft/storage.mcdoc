@@ -1,7 +1,7 @@
 use super::util::RootedStorage
 
 struct ActionBar {
-  id: string,
+  id: #[id] string,
   text: #[text_component] string
 }
 
