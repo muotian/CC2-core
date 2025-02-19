@@ -11,7 +11,7 @@ data modify storage cc2:player_storage root.orange.teleporter.rotY set from enti
 
 function cc2:save_player_storage
 
-tp @s @e[limit=1,type=minecraft:marker,tag=orange.teleporter.marker]
+tp @s @e[limit=1,type=minecraft:marker,tag=orange.teleporter.receiver]
 execute at @s run playsound minecraft:entity.player.teleport player @a ~ ~ ~
 execute at @s run particle minecraft:portal ~ ~1 ~ 0.1 0.3 0.1 1 100 force @a
 

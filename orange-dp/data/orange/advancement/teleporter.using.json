@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "using": {
+    "woosh": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
@@ -13,7 +13,17 @@
               }
             }
           }
-        }
+        },
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": [
+                "orange:orange_area"
+              ]
+            }
+          }
+        ]
       }
     }
   },

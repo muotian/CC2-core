@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
+                "minecraft:bundle_contents": [
+                  {
+                    "id": "minecraft:snowball",
+                    "count": 3
+                  }
+                ],
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:item_model": "minecraft:nether_star",
+                "minecraft:rarity": "epic",
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": "{orange:{id:\"time_absorber\"}}"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.orange.time_absorber",
+                "fallback": "Time Absorber"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.orange.time_absorber.desc.0",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.orange.time_absorber.desc.1",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

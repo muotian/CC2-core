@@ -143,7 +143,7 @@
         "requirements": [
           {
             "condition": "minecraft:entity_properties",
-            "entity": "attacker",
+            "entity": "this",
             "predicate": {
               "type": "#orange:possesses_time"
             }

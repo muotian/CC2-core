@@ -34,10 +34,19 @@ data modify storage npc:orange time_trader.SoundPool set value []
 data modify storage npc:orange time_trader.Buy set value []
 # Buy和Sell列表的內容，會直接被填入開啟商店介面時召喚的村民，因此當作村民的nbt來填寫即可，除此之外可用Name引用戰利品表的內容(建議為單項物品之戰利品表)來取代id和tag
 # 關於maxUses，若是填上2147483647，則代表可無限購買
-data modify storage npc:orange time_trader.Buy append value {buy:{id:"minecraft:emerald",count:12},sell:{id:"minecraft:stone_sword",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:1},sell:{id:"minecraft:baked_potato",count:8},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:1},sell:{id:"minecraft:bread",count:8},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:1},sell:{id:"minecraft:cooked_porkchop",count:6},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:2},sell:{Name:"orange:weapon/time_releasing_stick",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:3},sell:{id:"minecraft:orange_bundle",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:6},sell:{Name:"orange:weapon/time_stealing_sword",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:12},sell:{Name:"orange:weapon/time_impulse_axe",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:16},sell:{Name:"orange:weapon/time_explosion_stick",count:1},maxUses:2147483647}
 # ...
 
 # 清空列表
 data modify storage npc:orange time_trader.Sell set value []
-data modify storage npc:orange time_trader.Sell append value {buy:{Name:"orange:item/time_orb",count:16},sell:{id:"minecraft:emerald",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Sell append value {buy:{Name:"orange:item/time_orb",count:16},sell:{Name:"orange:item/time_currency",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Sell append value {buy:{id:"minecraft:rotten_flesh",count:32},sell:{Name:"orange:item/time_currency",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Sell append value {buy:{id:"minecraft:bone",count:8},sell:{Name:"orange:item/time_currency",count:1},maxUses:2147483647}
 # ...

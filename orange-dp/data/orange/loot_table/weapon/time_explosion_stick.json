@@ -13,13 +13,14 @@
                 "!minecraft:consumable": {},
                 "!minecraft:food": {},
                 "minecraft:enchantments": {
-                  "orange:time_releasing": 1,
-                  "orange:desc/time_releasing_0": 1,
-                  "orange:desc/time_releasing_1": 1
+                  "orange:time_explosion": 1,
+                  "orange:desc/time_explosion": 1,
+                  "orange:time_stealing": 1,
+                  "orange:desc/time_stealing": 1
                 },
-                "minecraft:item_model": "minecraft:stick",
+                "minecraft:item_model": "minecraft:breeze_rod",
                 "minecraft:max_stack_size": 1,
-                "minecraft:custom_data": "{orange:{id:\"time_releasing_stick\"}}"
+                "minecraft:custom_data": "{orange:{id:\"time_explosion_stick\"}}"
               }
             },
             {
@@ -44,8 +45,8 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "item.orange.time_releasing_stick",
-                "fallback": "Rod of Releasing",
+                "translate": "item.orange.time_explosion_stick",
+                "fallback": "Rod of Explosion",
                 "color": "gold",
                 "italic": false
               },
@@ -56,12 +57,12 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.time_releasing_stick.desc.0",
+                  "translate": "item.orange.time_explosion_stick.desc.0",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "translate": "item.orange.time_releasing_stick.desc.1",
+                  "translate": "item.orange.time_explosion_stick.desc.1",
                   "color": "white",
                   "italic": false
                 }

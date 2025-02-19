@@ -1,3 +1,5 @@
+scoreboard players operation @s orange.time_stealing.level_prev = @s orange.time_stealing.level
+
 execute if score @s orange.time_stealing.level matches -5 run particle minecraft:dust{scale:1,color:[0.54509807,0.6862745,0.87843144]} ~ ~0.8 ~ 0.25 0.5 0.25 1 1 normal
 execute if score @s orange.time_stealing.level matches -4 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{periodic_tick:3}} run particle minecraft:dust{scale:1,color:[0.54509807,0.6862745,0.87843144]} ~ ~0.8 ~ 0.25 0.5 0.25 1 2 normal
 execute if score @s orange.time_stealing.level matches -3 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{periodic_tick:2}} run particle minecraft:dust{scale:1,color:[0.54509807,0.6862745,0.87843144]} ~ ~0.8 ~ 0.25 0.5 0.25 1 1 normal

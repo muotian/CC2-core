@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "let_me_see_see": {
+    "where_is_that_fxxxing_wool": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

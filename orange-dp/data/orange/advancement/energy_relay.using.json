@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "using": {
+    "i_still_want_more": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {

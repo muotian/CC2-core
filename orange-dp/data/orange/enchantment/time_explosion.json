@@ -1,0 +1,63 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.orange.time_explosion",
+    "fallback": "Time Explosion"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "orange:time_stealing/clear"
+            },
+            {
+              "type": "minecraft:explode",
+              "block_interaction": "none",
+              "damage_type": "orange:time_explosion",
+              "large_particle": {
+                "type": "minecraft:explosion_emitter"
+              },
+              "radius": 1.5,
+              "small_particle": {
+                "type": "minecraft:explosion"
+              },
+              "sound": "minecraft:entity.generic.explode",
+              "offset": [0, 1, 0]
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "orange.time_stealing.level_prev": {
+                "max": -5
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "weight": 2
+}
