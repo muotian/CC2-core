@@ -20,7 +20,7 @@
 
 附帶附魔說明的附魔書由以下指令獲得  
 
-「利刃防護I」: 提供對來源於斧或刃的進戰攻擊提供減傷，數值同火焰保護等附魔  
+利刃防護: 提供對來源於斧或刃的進戰攻擊提供減傷，數值同火焰保護等附魔  
 `/loot give @s loot orange:enchanted_book/edge_protection_1`  
 `/loot give @s loot orange:enchanted_book/edge_protection_2`  
 `/loot give @s loot orange:enchanted_book/edge_protection_3`  
