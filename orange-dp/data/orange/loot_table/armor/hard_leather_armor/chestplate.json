@@ -30,7 +30,7 @@
                   "rgb": 9586478,
                   "show_in_tooltip": false
                 },
-                "minecraft:max_damage": 120,
+                "minecraft:max_damage": 160,
                 "minecraft:rarity": "uncommon",
                 "minecraft:custom_data": "{orange:{id:\"hard_leather_chestplate\"}}"
               }

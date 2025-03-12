@@ -1,1 +1,0 @@
-$item modify entity @s $(slot) [{function:"minecraft:reference",name:"orange:target_locator.bounded"},{function:"minecraft:set_components",components:{"minecraft:lodestone_tracker":{tracked:false,target:{dimension:"minecraft:overworld",pos:[I;$(x),$(y),$(z)]}}}}]

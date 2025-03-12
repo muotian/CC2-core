@@ -48,10 +48,6 @@ scoreboard objectives add orange.mob.time_mutant.state dummy
 scoreboard objectives add orange.misc.has_been_shot dummy
 scoreboard objectives add orange.npc_state dummy
 
-scoreboard objectives add orange.flame_of_finality.effect dummy
-scoreboard objectives add orange.flame_of_finality.effect.timer dummy
-scoreboard objectives add orange.flame_of_finality.eye_of_finality.animation dummy
-
 scoreboard players set #-1 number -1
 scoreboard players set #5 number 5
 scoreboard players set #3 number 3
