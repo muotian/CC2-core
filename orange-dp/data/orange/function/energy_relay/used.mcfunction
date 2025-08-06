@@ -1,7 +1,7 @@
 advancement revoke @s only orange:energy_relay.using
 
 playsound orange:enchant.time_stealing.hit player @a ~ ~ ~
-scoreboard players set @s orange.time_stealing.duration 100
+scoreboard players set @s orange.time_stealing.duration 200
 function orange:time_stealing/effect
 
 scoreboard players set $weapon_slot orange.temp 0

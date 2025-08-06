@@ -52,6 +52,23 @@
                   "translate": "item.orange.time_amplifier.desc.1",
                   "color": "white",
                   "italic": false
+                },
+                "",
+                {
+                  "translate": "item.orange.time_amplifier.desc.2",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "attribute.modifier.plus.0",
+                  "with": [
+                    "3",
+                    {
+                      "translate": "attribute.name.attack_damage"
+                    }
+                  ],
+                  "color": "blue",
+                  "italic": false
                 }
               ],
               "mode": "replace_all"

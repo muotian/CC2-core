@@ -70,11 +70,17 @@
               "lore": [
                 {
                   "translate": "item.orange.time_stealing_potion.desc.0",
+                  "color": "yellow",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "item.orange.time_stealing_potion.desc.1",
                   "color": "white",
                   "italic": false
                 },
                 {
-                  "translate": "item.orange.time_stealing_potion.desc.1",
+                  "translate": "item.orange.time_stealing_potion.desc.2",
                   "color": "white",
                   "italic": false
                 }

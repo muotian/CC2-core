@@ -34,6 +34,7 @@ scoreboard objectives add orange.time_orb dummy
 
 scoreboard objectives add orange.teleporter.cooldown dummy
 
+scoreboard objectives add orange.mob.muf_attacked dummy
 scoreboard objectives add orange.mob.muf_killed dummy
 scoreboard objectives add orange.mob.muf_falling dummy
 scoreboard objectives add orange.mob.muf_on_ground dummy
@@ -53,6 +54,3 @@ scoreboard players set #5 number 5
 scoreboard players set #3 number 3
 scoreboard players set #20 number 20
 scoreboard players set #24000 number 24000
-
-# 載入計時器 / load Timer
-function orange:timer

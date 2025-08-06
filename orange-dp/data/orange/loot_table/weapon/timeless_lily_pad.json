@@ -20,7 +20,8 @@
                   "orange:desc/time_punishment": 1
                 },
                 "minecraft:item_model": "orange:timeless_lily_pad",
-                "minecraft:max_stack_size": 1
+                "minecraft:max_stack_size": 1,
+                "minecraft:unbreakable": {}
               }
             },
             {
@@ -38,7 +39,13 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.orange.timeless_lily_pad.desc",
+                  "translate": "item.orange.timeless_lily_pad.desc.0",
+                  "color": "yellow",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "item.orange.timeless_lily_pad.desc.1",
                   "color": "white",
                   "italic": false
                 }
