@@ -1,8 +1,8 @@
 {
   "death.attack.lily_pad": "%1$s 被 %2$s 用飛天荷葉砍成了兩半",
   "death.attack.lily_pad.item": "%1$s 被 %2$s 用飛天荷葉砍成了兩半",
-  "death.attack.time_radiation": "%1$s 因來自 %2$s 的時間輻射而死",
-  "death.attack.time_radiation.item": "%1$s 因來自 %2$s 的時間輻射而死",
+  "death.attack.time_radiation": "%1$s 死於來自 %2$s 的時間輻射",
+  "death.attack.time_radiation.item": "%1$s 死於來自 %2$s 的時間輻射",
   "enchantment_desc.orange.edge_protection": " 提供對於劍與斧的額外防護。(每級-8%%傷害)",
   "enchantment_desc.orange.time_explosion": " 當目標的「時間能量」等級為最低值時，會產生爆炸。",
   "enchantment_desc.orange.time_impulse": " 衝刺或滑翔狀態時，從目標竊取最大量的「時間能量」。",

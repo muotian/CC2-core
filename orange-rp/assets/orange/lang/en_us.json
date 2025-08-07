@@ -1,8 +1,8 @@
 {
   "death.attack.lily_pad": "%1$s was cut in half by %2$s using a flying lily pad",
   "death.attack.lily_pad.item": "%1$s was cut in half by %2$s using a flying lily pad",
-  "death.attack.time_radiation": "%1$s died of time radiation that comes from %2$s",
-  "death.attack.time_radiation.item": "%1$s died of time radiation that comes from %2$s",
+  "death.attack.time_radiation": "%1$s died from time radiation that comes from %2$s",
+  "death.attack.time_radiation.item": "%1$s died from time radiation that comes from %2$s",
   "enchantment_desc.orange.edge_protection": " Provides extra protection from swords and axes. (-8%% dmg / lvl)",
   "enchantment_desc.orange.time_explosion": " Causes an explosion when the target's Time Energy level is at the lowest.",
   "enchantment_desc.orange.time_impulse": " Steals the maximum amount of Time Energy from the target while sprinting or gliding.",
