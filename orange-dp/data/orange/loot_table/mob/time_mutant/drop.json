@@ -58,6 +58,27 @@
         }
       ],
       "rolls": 1.0
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "orange:item/enchanted_apple",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "enchanted_chance": {
+                "type": "minecraft:linear",
+                "base": 0.06,
+                "per_level_above_first": 0.01
+              },
+              "enchantment": "minecraft:looting",
+              "unenchanted_chance": 0.05
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
     }
   ]
 }

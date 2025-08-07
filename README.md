@@ -148,14 +148,8 @@
 時間干涉儀: 拿在手上時，若遭「竊時」則有20%機率將其無效  
 `/loot give @s loot orange:item/time_interferometer`
 
-隨身傳送裝置: 廢棄(?)，需要存在指定實體才能使用，原用於傳送往返交易用村民身邊  
-`/loot give @s loot orange:item/teleporter`  
-
-時間貨幣: 廢棄(?)，原作為與交易用村民交易之貨幣  
+時間貨幣: 作為與交易用村民交易之貨幣  
 `/loot give @s loot orange:item/time_currency`
-
-目標定位器: 廢棄，原用於指向羊毛位置，需要在該位置放置指定實體才能使用
-`/loot give @s loot orange:item/target_locator`
 
 ## Spawners
 

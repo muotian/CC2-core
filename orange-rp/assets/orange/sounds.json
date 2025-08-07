@@ -1,20 +1,4 @@
 {
-  "block.teleporter.activate": {
-    "sounds": [
-      {
-        "name": "minecraft:block/beacon/activate"
-      }
-    ],
-    "subtitle": "subtitles.orange.teleporter.activate"
-  },
-  "block.teleporter.deactivate": {
-    "sounds": [
-      {
-        "name": "minecraft:block/beacon/deactivate"
-      }
-    ],
-    "subtitle": "subtitles.orange.teleporter.deactivate"
-  },
   "enchant.time_releasing.hit": {
     "sounds": [
       {

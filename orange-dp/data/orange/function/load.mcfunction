@@ -1,3 +1,5 @@
+function endsky_npc:load
+
 scoreboard objectives add orange.arg dummy
 scoreboard objectives add orange.temp dummy
 
@@ -31,8 +33,6 @@ scoreboard objectives add orange.timeless_lily_pad.id dummy
 scoreboard objectives add orange.timeless_lily_pad.add_damage dummy
 
 scoreboard objectives add orange.time_orb dummy
-
-scoreboard objectives add orange.teleporter.cooldown dummy
 
 scoreboard objectives add orange.mob.muf_attacked dummy
 scoreboard objectives add orange.mob.muf_killed dummy

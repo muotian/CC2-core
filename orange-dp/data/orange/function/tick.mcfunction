@@ -1,3 +1,6 @@
+execute positioned -233.5 89 277.5 if loaded ~ ~ ~ unless entity @e[type=minecraft:villager,tag=npc.orange.time_trader,distance=0..0.1] run function npc:orange/time_trader/summon
+function endsky_npc:tick
+
 execute as @a store result score @s orange.is_sprinting if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_sprinting:true}}}
 
 execute as @e[type=minecraft:marker,tag=orange.spawner] at @s unless block ~ ~ ~ minecraft:spawner run kill @s
@@ -34,5 +37,3 @@ execute as @e[type=minecraft:item,predicate=orange:is_dropped_mysterious_ore] at
 execute as @e[type=minecraft:item,predicate=orange:is_dropped_time_orb] at @s positioned ~ ~0.25 ~ facing entity @p feet run function orange:time_orb/item_timer
 
 execute as @a[scores={orange.dead=1..}] run function orange:player_dead
-
-scoreboard players remove @a[scores={orange.teleporter.cooldown=1..}] orange.teleporter.cooldown 1

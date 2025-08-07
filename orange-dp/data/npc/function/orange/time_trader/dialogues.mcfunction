@@ -8,18 +8,79 @@ data modify storage npc:orange time_trader.NormalRandom set value 0b
 
 # 清空列表
 data modify storage npc:orange time_trader.Normal set value []
-data modify storage npc:orange time_trader.Normal append value {Texts:['{"translate":"npc.orange.time_trader.normal.0.0"}','{"translate":"npc.orange.time_trader.normal.0.1"}','{"translate":"npc.orange.time_trader.normal.0.2"}','{"translate":"npc.orange.time_trader.normal.0.3"}','{"translate":"npc.orange.time_trader.normal.0.4"}','{"translate":"npc.orange.time_trader.normal.0.5"}','{"translate":"npc.orange.time_trader.normal.0.6"}'],Once:1b}
-data modify storage npc:orange time_trader.Normal append value {Texts:['{"translate":"npc.orange.time_trader.normal.1.0"}']}
+data modify storage npc:orange time_trader.Normal append value \
+{ \
+  Texts:[ \
+    '{"translate":"npc.orange.time_trader.normal.0.0"}', \
+    '{"translate":"npc.orange.time_trader.normal.0.1"}', \
+    '{"translate":"npc.orange.time_trader.normal.0.2"}', \
+    '{"translate":"npc.orange.time_trader.normal.0.3"}', \
+    '{"translate":"npc.orange.time_trader.normal.0.4"}', \
+    '{"translate":"npc.orange.time_trader.normal.0.5"}' \
+  ], \
+  Once: 1b \
+}
+data modify storage npc:orange time_trader.Normal append value \
+{ \
+  Texts: [ \
+    '{"translate":"npc.orange.time_trader.normal.1.0"}' \
+  ] \
+}
 # ...
 
 data modify storage npc:orange time_trader.TraderNormalRandom set value 0b
 
 # 清空列表
 data modify storage npc:orange time_trader.TraderNormal set value []
-data modify storage npc:orange time_trader.TraderNormal append value {Texts:['{"translate":"npc.orange.time_trader.trader_normal.1.0"}'],Options:[{Option:'{"translate":"npc.orange.time_trader.trader_normal.1.option_0"}',React:['{"translate":"npc.orange.time_trader.trader_normal.1.option_0.0"}'],End:1b,Extra:{EndCommand:"function npc:orange/time_trader/end_function_1"}},{Option:'{"translate":"npc.orange.time_trader.trader_normal.1.option_1"}',React:['{"translate":"npc.orange.time_trader.trader_normal.1.option_1.0"}','{"translate":"npc.orange.time_trader.trader_normal.1.option_1.1"}','{"translate":"npc.orange.time_trader.trader_normal.1.option_1.2"}','{"translate":"npc.orange.time_trader.trader_normal.1.option_1.3"}','{"translate":"npc.orange.time_trader.trader_normal.1.option_1.4"}','{"translate":"npc.orange.time_trader.trader_normal.1.option_1.5"}'],End:1b}]}
+data modify storage npc:orange time_trader.TraderNormal append value \ 
+{ \
+  Texts: [ \
+    '{"translate":"npc.orange.time_trader.trader_normal.0.0"}' \
+  ], \
+  Options: [ \
+    { \
+      Option: '{"translate":"npc.orange.time_trader.trader_normal.0.option_0"}', \
+      React: [ \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_0.0"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_0.1"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_0.2"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_0.3"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_0.4"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.1"}', \
+      ] \
+    }, \
+    { \
+      Option: '{"translate":"npc.orange.time_trader.trader_normal.0.option_1"}', \
+      React: [ \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_1.0"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_1.1"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_1.2"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_1.3"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_1.4"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_1.5"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_1.6"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_1.7"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.1"}' \
+      ] \
+    }, \
+    { \
+      Option: '{"translate":"npc.orange.time_trader.trader_normal.0.option_2"}', \
+      React: [ \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_2.0"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_2.1"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.1"}', \
+      ] \
+    }, \
+    { \
+      Option: '{"translate":"npc.orange.time_trader.trader_normal.0.option_3"}', \
+      React: [ \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.option_3.0"}', \
+        '{"translate":"npc.orange.time_trader.trader_normal.0.1"}', \
+      ] \
+    } \
+  ] \
+}
 # ...
-
-data modify storage npc:orange time_trader.GiveTeleporter set value {Texts:['{"translate":"npc.orange.time_trader.trader_normal.0.0"}','{"translate":"npc.orange.time_trader.trader_normal.0.1"}','{"translate":"npc.orange.time_trader.trader_normal.0.2"}','{"translate":"npc.orange.time_trader.trader_normal.0.3"}','{"translate":"npc.orange.time_trader.trader_normal.0.4"}','{"translate":"npc.orange.time_trader.trader_normal.0.5"}','{"translate":"npc.orange.time_trader.trader_normal.0.6"}','{"translate":"npc.orange.time_trader.trader_normal.0.7"}',],Extra:{EndCommand:"function npc:orange/time_trader/end_function_0"}}
 
 data modify storage npc:orange time_trader.Exit set value {Texts:['{"translate":"npc.orange.time_trader.exit.0"}']}
 
@@ -39,14 +100,21 @@ data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:i
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:1},sell:{id:"minecraft:cooked_porkchop",count:6},maxUses:2147483647}
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:2},sell:{Name:"orange:weapon/time_releasing_stick",count:1},maxUses:2147483647}
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:3},sell:{id:"minecraft:orange_bundle",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:4},sell:{id:"minecraft:bow",components:{"minecraft:enchantments":{levels:{"minecraft:punch":1}}},count:1},maxUses:2147483647}
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:6},sell:{Name:"orange:weapon/time_stealing_sword",count:1},maxUses:2147483647}
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:12},sell:{Name:"orange:weapon/time_impulse_axe",count:1},maxUses:2147483647}
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:16},sell:{Name:"orange:weapon/time_explosion_stick",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/edge_protection_1",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_protection_1",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_stablizing",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_stealing_1",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_punishment_1",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_releasing",count:1},maxUses:2147483647}
 # ...
 
 # 清空列表
 data modify storage npc:orange time_trader.Sell set value []
 data modify storage npc:orange time_trader.Sell append value {buy:{Name:"orange:item/time_orb",count:16},sell:{Name:"orange:item/time_currency",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Sell append value {buy:{id:"minecraft:bone",count:24},sell:{Name:"orange:item/time_currency",count:1},maxUses:2147483647}
 data modify storage npc:orange time_trader.Sell append value {buy:{id:"minecraft:rotten_flesh",count:32},sell:{Name:"orange:item/time_currency",count:1},maxUses:2147483647}
-data modify storage npc:orange time_trader.Sell append value {buy:{id:"minecraft:bone",count:8},sell:{Name:"orange:item/time_currency",count:1},maxUses:2147483647}
 # ...
