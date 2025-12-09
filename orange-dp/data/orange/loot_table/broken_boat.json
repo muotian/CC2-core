@@ -1,0 +1,215 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stick",
+          "functions": [
+            {"function": "set_count", "count": 2}
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "oak_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["oak_boat", "oak_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "spruce_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["spruce_boat", "spruce_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "birch_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["birch_boat", "birch_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "jungle_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["jungle_boat", "jungle_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "acacia_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["acacia_boat", "acacia_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "cherry_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["cherry_boat", "cherry_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "dark_oak_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["dark_oak_boat", "dark_oak_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "pale_oak_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["pale_oak_boat", "pale_oak_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "mangrove_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["mangrove_boat", "mangrove_chest_boat"]}
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "alternatives",
+                    "children": [
+                      {
+                        "type": "item",
+                        "name": "bamboo_planks",
+                        "conditions": [
+                          {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {"type": ["bamboo_raft", "bamboo_chest_raft"]}
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "functions": [
+            {"function": "set_count", "count": 3}
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "chest",
+          "conditions": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {"type": "#boat"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
