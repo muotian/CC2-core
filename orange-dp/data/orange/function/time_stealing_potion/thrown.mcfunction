@@ -1,3 +1,4 @@
+data modify storage orange:macro temp set from entity @s Item
 execute on origin run function orange:time_stealing_potion/record_item
 tag @s add orange.time_stealing_potion
 execute at @s summon minecraft:marker run function orange:time_stealing_potion/detector_summon

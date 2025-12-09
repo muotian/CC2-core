@@ -1,4 +1,4 @@
-execute as @s[type=#orange:boat] run return run kill @s
+execute as @s[type=#orange:boat] at @s run return run function orange:timeless_lily_pad/boat_killer
 execute store result score $hurt_time orange.temp run data get entity @s HurtTime
 execute if score $hurt_time orange.temp matches 1.. run return 0
 scoreboard players set $damage orange.temp 7
