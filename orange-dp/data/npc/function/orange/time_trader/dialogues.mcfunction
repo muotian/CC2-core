@@ -102,14 +102,14 @@ data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:i
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:3},sell:{id:"minecraft:orange_bundle",count:1},maxUses:2147483647}
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:4},sell:{id:"minecraft:bow",components:{"minecraft:enchantments":{levels:{"minecraft:punch":1}}},count:1},maxUses:2147483647}
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:6},sell:{Name:"orange:weapon/time_stealing_sword",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:8},sell:{Name:"orange:weapon/time_explosion_stick",count:1},maxUses:2147483647}
 data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:12},sell:{Name:"orange:weapon/time_impulse_axe",count:1},maxUses:2147483647}
-data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:16},sell:{Name:"orange:weapon/time_explosion_stick",count:1},maxUses:2147483647}
-data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/edge_protection_1",count:1},maxUses:2147483647}
-data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_protection_1",count:1},maxUses:2147483647}
-data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_stablizing",count:1},maxUses:2147483647}
-data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_stealing_1",count:1},maxUses:2147483647}
-data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_punishment_1",count:1},maxUses:2147483647}
-data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:32},sell:{Name:"orange:enchanted_book/time_releasing",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:8},sell:{Name:"orange:enchanted_book/edge_protection_1",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:8},sell:{Name:"orange:enchanted_book/time_protection_1",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:8},sell:{Name:"orange:enchanted_book/time_stablizing",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:8},sell:{Name:"orange:enchanted_book/time_punishment_1",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:16},sell:{Name:"orange:enchanted_book/time_stealing_1",count:1},maxUses:2147483647}
+data modify storage npc:orange time_trader.Buy append value {buy:{Name:"orange:item/time_currency",count:16},sell:{Name:"orange:enchanted_book/time_releasing",count:1},maxUses:2147483647}
 # ...
 
 # 清空列表
