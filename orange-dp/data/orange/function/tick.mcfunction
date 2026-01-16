@@ -1,3 +1,5 @@
+# NPC version: 1
+execute unless score $current orange.npc_state matches 1 positioned -233.5 89 277.5 if loaded ~ ~ ~ if function npc:orange/time_trader/reset run scoreboard players set $current orange.npc_state 1
 execute positioned -233.5 89 277.5 if loaded ~ ~ ~ unless entity @e[type=minecraft:villager,tag=npc.orange.time_trader,distance=0..0.1] run function npc:orange/time_trader/summon
 function endsky_npc:tick
 
